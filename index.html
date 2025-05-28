@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elon Musk Simulator</title>
+    <script src="questions.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            position: relative;
+            width: 90vw;
+            height: 90vh;
+            max-width: 500px;
+            max-height: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 10px;
+            z-index: 5;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 0;
+            color: #ff4500;
+            text-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin-top: 5px;
+            opacity: 0.8;
+        }
+
+        .vitals {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 5px;
+            padding: 10px;
+            z-index: 10;
+            margin-bottom: 10px;
+        }
+
+        .vital {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.8em;
+            opacity: 0.8;
+            cursor: help;
+        }
+
+        .vital-level {
+            width: 100%;
+            height: 5px;
+            background: #444;
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 4px;
+            position: relative;
+        }
+
+        .vital-fill {
+            height: 100%;
+            transition: width 0.3s ease, background 0.3s ease;
+        }
+
+        .vital-tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #222;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            font-size: 0.7em;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .vital:hover .vital-tooltip {
+            opacity: 1;
+        }
+
+        .card-container {
+            position: relative;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            perspective: 1000px;
+        }
+
+        .card {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #1a1a1a;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.1s ease-out, opacity 0.2s ease;
+            backface-visibility: hidden;
+            will-change: transform, opacity;
+            user-select: none;
+            overflow: hidden;
+            touch-action: pan-y;
+            transform-origin: center center;
+        }
+
+        .card h2 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            z-index: 2;
+        }
+
+        .card p {
+            font-size: 1em;
+            line-height: 1.4;
+            margin-top: auto;
+            margin-bottom: 20px;
+            z-index: 2;
+        }
+
+        .card-emojis {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            z-index: 2;
+        }
+
+        .swipe-instruction {
+            font-size: 0.9em;
+            opacity: 0.7;
+            margin-top: auto;
+            margin-bottom: 10px;
+            z-index: 2;
+        }
+
+        .elon-illustration {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+            z-index: 2;
+            opacity: 0.9;
+            pointer-events: none; /* Prevent interaction with the image */
+        }
+
+        .elon-face {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            pointer-events: none; /* Prevent interaction with the image */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.15s ease, transform 0.15s ease;
+            z-index: 100;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            max-width: 80%;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+        }
+
+        #left-overlay {
+            transform: translateX(-50px);
+            color: #2ecc71;
+        }
+
+        #right-overlay {
+            transform: translateX(50px);
+            color: #e74c3c;
+        }
+
+        .show-overlay {
+            opacity: 1 !important;
+            transform: translateX(0) !important;
+        }
+
+        .swiped-left {
+            transform: translateX(-150%) rotate(-30deg) !important;
+            opacity: 0 !important;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease !important;
+        }
+
+        .swiped-right {
+            transform: translateX(150%) rotate(30deg) !important;
+            opacity: 0 !important;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease !important;
+        }
+
+        .next-card-enter {
+            transform: scale(0.8) translateY(20px);
+            opacity: 0;
+        }
+
+        .next-card-enter-active {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+        }
+
+        .game-over {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+        }
+
+        .game-over.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .game-over h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+
+        .game-over p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            text-align: center;
+            max-width: 80%;
+        }
+
+        .control-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .control-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .restart-button {
+            background: #2ecc71;
+            color: white;
+        }
+
+        .restart-button:hover {
+            background: #27ae60;
+        }
+
+        .quit-button {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .quit-button:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ELON MUSK SIMULATOR</h1>
+            <p>This is Elon Musk!</p>
+        </div>
+        
+        <div class="vitals" id="vitals">
+            <!-- Vital status bars will be generated by JavaScript -->
+        </div>
+        
+        <div class="card-container" id="card-container">
+            <!-- Cards will be generated by JavaScript -->
+        </div>
+        
+        <div class="overlay" id="left-overlay"></div>
+        <div class="overlay" id="right-overlay"></div>
+    </div>
+
+    <div class="game-over" id="game-over">
+        <h2>Game Over: Elon has lost interest in you...</h2>
+        <p>Your decisions have led to a catastrophic failure in one of Elon's ventures.</p>
+        <div class="control-buttons">
+            <button class="control-button restart-button" id="restart-button">Try Again</button>
+            <button class="control-button quit-button" id="quit-button">Quit</button>
+        </div>
+    </div>
+
+    <script>
+        // Vital status definitions with symbols and colors
+        const vitalStatuses = {
+            "spacex": { symbol: "🚀", label: "SpaceX", color: "#cc0000", value: 50 },
+            "neuralink": { symbol: "🧠", label: "Neuralink", color: "#800080", value: 50 },
+            "tesla": { symbol: "⚡", label: "Tesla", color: "#fcb323", value: 50 },
+            "public_opinion": { symbol: "🗣️", label: "Public Opinion", color: "#0077be", value: 50 },
+            "government": { symbol: "🏛️", label: "Government", color: "#005bbb", value: 50 },
+            "finance": { symbol: "💰", label: "Finance", color: "#2ecc71", value: 50 },
+            "gaming": { symbol: "🎮", label: "Gaming", color: "#3498db", value: 50 },
+            "crypto": { symbol: "🪙", label: "Crypto", color: "#76b900", value: 50 },
+            "ai_bots": { symbol: "🤖", label: "AI & Bots", color: "#95a5a6", value: 50 },
+            "mars": { symbol: "🪐", label: "Mars", color: "#e74c3c", value: 50 },
+            "legacy": { symbol: "👨‍👩‍👧‍👦", label: "Legacy", color: "#922BFF", value: 50 },
+            "x_twitter": { symbol: "𝕏", label: "X (Twitter)", color: "#1DA1F2", value: 50 }
+        };
+
+        // Game state variables
+        let currentQuestionIndex = 0;
+        let isGameOver = false;
+        let shuffledQuestions = [];
+        let currentQuestion = null;
+        
+        // Animation and interaction state flags
+        let isAnimating = false;
+        let isDragging = false;
+        let swipeInProgress = false;
+        let isCardCreating = false;
+        let lastSwipeTime = 0;
+        
+        // Swipe tracking variables
+        let mouseDownTime = 0;
+        let mouseDownX = 0;
+        
+        // Debug mode
+        const debugMode = false;
+        
+        // Swipe configuration constants
+        const SWIPE_THRESHOLD = 50;
+        const SWIPE_RESISTANCE = 2.2;
+        const ROTATION_FACTOR = 0.05;
+        const ANIMATION_DURATION = 600;
+        const RESPONSE_DISPLAY_DURATION = 1200;
+        const VELOCITY_THRESHOLD = 0.5;
+        const SPRING_BACK_DURATION = 350;
+        const INERTIA_FACTOR = 0.8;
+        const CENTER_THRESHOLD = 20;
+        const CLICK_THRESHOLD = 300;
+
+        // Elon Musk face images
+        const elonNormalImage = 'elon_musk_cartoon.png';
+        const elonHappyImage = 'elon_musk_happy.png';
+        const elonAngryImage = 'elon_musk_angry.png';
+
+        // Debug logging function
+        function debugLog(...args) {
+            if (debugMode) {
+                console.log(...args);
+            }
+        }
+
+        // Create vital status elements
+        function createVitalElements() {
+            const vitalsContainer = document.getElementById('vitals');
+            vitalsContainer.innerHTML = '';
+            
+            Object.entries(vitalStatuses).forEach(([key, vital]) => {
+                const vitalDiv = document.createElement('div');
+                vitalDiv.className = 'vital';
+                vitalDiv.title = `${vital.label} - ${vital.value}`;
+                
+                vitalDiv.innerHTML = `
+                    <div>${vital.symbol}</div>
+                    <div class="vital-level">
+                        <div class="vital-fill" style="width: ${vital.value}%; background: ${vital.color}"></div>
+                        <div class="vital-tooltip">${vital.label}: ${vital.value}</div>
+                    </div>
+                `;
+                
+                vitalsContainer.appendChild(vitalDiv);
+            });
+        }
+
+        // Update vital status visualizations
+        function updateVitalElements() {
+            const vitalsContainer = document.getElementById('vitals');
+            const vitalElements = vitalsContainer.querySelectorAll('.vital');
+            
+            vitalElements.forEach((element, index) => {
+                const key = Object.keys(vitalStatuses)[index];
+                const vital = vitalStatuses[key];
+                const fill = element.querySelector('.vital-fill');
+                const tooltip = element.querySelector('.vital-tooltip');
+                
+                if (fill) {
+                    fill.style.width = `${vital.value}%`;
+                    fill.style.background = vital.color;
+                }
+                
+                if (tooltip) {
+                    tooltip.textContent = `${vital.label}: ${vital.value}`;
+                }
+                
+                element.title = `${vital.label} - ${vital.value}`;
+            });
+            
+            // Check for game over condition
+            checkGameOver();
+        }
+
+        // Check if any vital has reached 0 or 100
+        function checkGameOver() {
+            if (isGameOver) return;
+            
+            for (const key in vitalStatuses) {
+                const value = vitalStatuses[key].value;
+                if (value <= 0 || value >= 100) {
+                    showGameOver();
+                    return;
+                }
+            }
+        }
+
+        // Show game over screen
+        function showGameOver() {
+            isGameOver = true;
+            document.getElementById('game-over').classList.add('show');
+        }
+
+        // Create a card with the current question
+        function createCard() {
+            // Prevent multiple card creations
+            if (isCardCreating) {
+                debugLog("Card creation already in progress, skipping");
+                return;
+            }
+            
+            isCardCreating = true;
+            debugLog("Creating new card, currentQuestionIndex:", currentQuestionIndex);
+            
+            const cardContainer = document.getElementById('card-container');
+            cardContainer.innerHTML = '';
+            
+            // Reset if we've gone through all questions
+            if (currentQuestionIndex >= shuffledQuestions.length) {
+                debugLog("Reached end of questions, reshuffling");
+                shuffledQuestions = shuffleArray([...questions]);
+                currentQuestionIndex = 0;
+            }
+            
+            // Store the current question for overlay display
+            currentQuestion = shuffledQuestions[currentQuestionIndex];
+            debugLog("Current question:", currentQuestion.text);
+            
+            // Create the card element
+            const card = document.createElement('div');
+            card.className = 'card next-card-enter';
+            card.id = 'current-card';
+            
+            // Generate emoji HTML
+            const emojisHtml = currentQuestion.emojis.map(emoji => `<span>${emoji}</span>`).join('');
+            
+            // Set card content
+            card.innerHTML = `
+                <div class="card-emojis">${emojisHtml}</div>
+                <h2>${currentQuestion.text}</h2>
+                <div class="elon-illustration">
+                    <img src="${elonNormalImage}" alt="Elon Musk" class="elon-face" id="elon-face">
+                </div>
+                <div class="swipe-instruction">Swipe left or right to decide</div>
+            `;
+            
+            // Add card to container
+            cardContainer.appendChild(card);
+            
+            // Set up overlay texts for the current question
+            const leftOverlay = document.getElementById('left-overlay');
+            const rightOverlay = document.getElementById('right-overlay');
+            
+            leftOverlay.textContent = currentQuestion.leftResponse;
+            rightOverlay.textContent = currentQuestion.rightResponse;
+            
+            // Reset overlay styles
+            leftOverlay.style.opacity = 0;
+            rightOverlay.style.opacity = 0;
+            leftOverlay.style.transform = 'translateX(-50px)';
+            rightOverlay.style.transform = 'translateX(50px)';
+            
+            // Animate card entrance
+            setTimeout(() => {
+                card.classList.add('next-card-enter-active');
+                
+                // Remove animation classes after animation completes
+                setTimeout(() => {
+                    card.classList.remove('next-card-enter', 'next-card-enter-active');
+                    isCardCreating = false;
+                    
+                    // Set up swipe events after animation completes
+                    setupSwipeEvents(card);
+                }, 300);
+            }, 50);
+        }
+
+        // Set up swipe events for the card
+        function setupSwipeEvents(card) {
+            // Variables for tracking swipe state
+            let startX = 0;
+            let currentX = 0;
+            let animationFrameId = null;
+            let initialTouchTarget = null;
+            let swipeStartTime = 0;
+            let lastMoveTime = 0;
+            let lastMoveX = 0;
+            let velocityArray = [];
+            let cardRect = null;
+            
+            // Function to update card position and rotation during swipe
+            function updateCardPosition() {
+                if (!isDragging) return;
+                
+                const diffX = currentX - startX;
+                
+                // Calculate resistance that increases with distance
+                const distance = Math.abs(diffX);
+                const resistanceFactor = SWIPE_RESISTANCE * (1 + distance / 500);
+                const normalizedDiff = diffX / resistanceFactor;
+                
+                // Calculate rotation with dampening
+                const rotationDampening = 1 - Math.min(0.6, distance / 1000);
+                const rotation = normalizedDiff * ROTATION_FACTOR * rotationDampening;
+                
+                // Apply transform
+                card.style.transform = `translateX(${normalizedDiff}px) rotate(${rotation}deg)`;
+                
+                // Calculate velocity for inertia effect
+                const now = performance.now();
+                if (lastMoveTime > 0) {
+                    const dt = now - lastMoveTime;
+                    if (dt > 0) {
+                        const dx = currentX - lastMoveX;
+                        const instantVelocity = dx / dt;
+                        
+                        // Store recent velocities (last 5)
+                        velocityArray.push(instantVelocity);
+                        if (velocityArray.length > 5) {
+                            velocityArray.shift();
+                        }
+                    }
+                }
+                lastMoveTime = now;
+                lastMoveX = currentX;
+                
+                // Update overlays and Elon's face
+                updateOverlays(diffX);
+                updateElonFace(diffX);
+                
+                // Continue animation loop
+                animationFrameId = requestAnimationFrame(updateCardPosition);
+            }
+            
+            // Calculate average velocity from recent movements
+            function getAverageVelocity() {
+                if (velocityArray.length === 0) return 0;
+                const sum = velocityArray.reduce((a, b) => a + b, 0);
+                return sum / velocityArray.length;
+            }
+            
+            // Touch start event
+            card.addEventListener('touchstart', (e) => {
+                if (isAnimating || swipeInProgress) {
+                    debugLog("Touch ignored - animation or swipe in progress");
+                    return;
+                }
+                
+                // Store the initial touch target
+                initialTouchTarget = e.target;
+                
+                // Prevent default only for card, not for Elon image
+                if (!initialTouchTarget.classList.contains('elon-face')) {
+                    e.preventDefault();
+                }
+                
+                // Initialize swipe tracking
+                startX = e.touches[0].clientX;
+                currentX = startX;
+                isDragging = true;
+                swipeStartTime = performance.now();
+                lastMoveTime = 0;
+                velocityArray = [];
+                cardRect = card.getBoundingClientRect();
+                
+                debugLog("Touch start at", startX);
+                
+                // Start animation loop
+                cancelAnimationFrame(animationFrameId);
+                animationFrameId = requestAnimationFrame(updateCardPosition);
+            }, { passive: false });
+            
+            // Global touch move event
+            document.addEventListener('touchmove', (e) => {
+                if (!isDragging || isAnimating || swipeInProgress) return;
+                
+                // Skip if the initial touch was on the Elon image
+                if (initialTouchTarget && initialTouchTarget.classList.contains('elon-face')) return;
+                
+                e.preventDefault();
+                currentX = e.touches[0].clientX;
+                debugLog("Touch move to", currentX);
+            }, { passive: false });
+            
+            // Global touch end event
+            document.addEventListener('touchend', (e) => {
+                if (!isDragging || isAnimating || swipeInProgress) {
+                    debugLog("Touch end ignored - not dragging or animation/swipe in progress");
+                    return;
+                }
+                
+                // Skip if the initial touch was on the Elon image
+                if (initialTouchTarget && initialTouchTarget.classList.contains('elon-face')) {
+                    isDragging = false;
+                    debugLog("Touch end ignored - initial touch was on Elon image");
+                    return;
+                }
+                
+                isDragging = false;
+                cancelAnimationFrame(animationFrameId);
+                
+                const diffX = currentX - startX;
+                const avgVelocity = getAverageVelocity();
+                
+                debugLog("Touch end, diffX:", diffX, "avgVelocity:", avgVelocity);
+                
+                // Prevent rapid swipes
+                const now = Date.now();
+                if (now - lastSwipeTime < ANIMATION_DURATION) {
+                    debugLog("Touch end ignored - too soon after last swipe");
+                    resetCardPosition();
+                    return;
+                }
+                
+                // Check if card is near center position
+                if (Math.abs(diffX) < CENTER_THRESHOLD) {
+                    // If near center, just reset without action
+                    debugLog("Touch end - card near center, resetting");
+                    resetCardPosition();
+                    return;
+                }
+                
+                // Decide swipe direction based on position and velocity
+                if (diffX < -SWIPE_THRESHOLD || (diffX < 0 && avgVelocity < -VELOCITY_THRESHOLD)) {
+                    debugLog("Touch end - swiping left");
+                    swipeInProgress = true;
+                    swipeLeft();
+                    lastSwipeTime = now;
+                } else if (diffX > SWIPE_THRESHOLD || (diffX > 0 && avgVelocity > VELOCITY_THRESHOLD)) {
+                    debugLog("Touch end - swiping right");
+                    swipeInProgress = true;
+                    swipeRight();
+                    lastSwipeTime = now;
+                } else {
+                    // Apply spring-back animation
+                    debugLog("Touch end - spring back");
+                    springBackCard(diffX, avgVelocity);
+                }
+            }, { passive: false });
+            
+            // Mouse down event
+            card.addEventListener('mousedown', (e) => {
+                if (isAnimating || swipeInProgress) {
+                    debugLog("Mouse down ignored - animation or swipe in progress");
+                    return;
+                }
+                
+                // Skip if the target is the Elon image
+                if (e.target.classList.contains('elon-face')) {
+                    debugLog("Mouse down ignored - target is Elon image");
+                    return;
+                }
+                
+                // Initialize swipe tracking
+                startX = e.clientX;
+                currentX = startX;
+                isDragging = true;
+                swipeStartTime = performance.now();
+                lastMoveTime = 0;
+                velocityArray = [];
+                cardRect = card.getBoundingClientRect();
+                mouseDownTime = Date.now();
+                mouseDownX = startX;
+                
+                debugLog("Mouse down at", startX);
+                
+                // Start animation loop
+                cancelAnimationFrame(animationFrameId);
+                animationFrameId = requestAnimationFrame(updateCardPosition);
+                
+                // Prevent text selection during drag
+                e.preventDefault();
+            });
+            
+            // Global mouse move event
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging || isAnimating || swipeInProgress) return;
+                currentX = e.clientX;
+                debugLog("Mouse move to", currentX);
+            });
+            
+            // Global mouse up event
+            document.addEventListener('mouseup', (e) => {
+                if (!isDragging || isAnimating || swipeInProgress) {
+                    debugLog("Mouse up ignored - not dragging or animation/swipe in progress");
+                    return;
+                }
+                
+                const mouseUpTime = Date.now();
+                const isClick = (mouseUpTime - mouseDownTime < CLICK_THRESHOLD) && 
+                                (Math.abs(e.clientX - mouseDownX) < 5);
+                
+                isDragging = false;
+                cancelAnimationFrame(animationFrameId);
+                
+                // Handle click vs. drag
+                if (isClick) {
+                    debugLog("Mouse up - detected as click");
+                    // If it's a click, determine left or right side
+                    const cardRect = card.getBoundingClientRect();
+                    const cardCenterX = cardRect.left + cardRect.width / 2;
+                    
+                    if (e.clientX < cardCenterX) {
+                        debugLog("Click on left side - swiping left");
+                        swipeInProgress = true;
+                        swipeLeft();
+                        lastSwipeTime = Date.now();
+                        return;
+                    } else {
+                        debugLog("Click on right side - swiping right");
+                        swipeInProgress = true;
+                        swipeRight();
+                        lastSwipeTime = Date.now();
+                        return;
+                    }
+                }
+                
+                const diffX = currentX - startX;
+                const avgVelocity = getAverageVelocity();
+                
+                debugLog("Mouse up, diffX:", diffX, "avgVelocity:", avgVelocity);
+                
+                // Prevent rapid swipes
+                const now = Date.now();
+                if (now - lastSwipeTime < ANIMATION_DURATION) {
+                    debugLog("Mouse up ignored - too soon after last swipe");
+                    resetCardPosition();
+                    return;
+                }
+                
+                // Check if card is near center position
+                if (Math.abs(diffX) < CENTER_THRESHOLD) {
+                    // If near center, just reset without action
+                    debugLog("Mouse up - card near center, resetting");
+                    resetCardPosition();
+                    return;
+                }
+                
+                // Decide swipe direction based on position and velocity
+                if (diffX < -SWIPE_THRESHOLD || (diffX < 0 && avgVelocity < -VELOCITY_THRESHOLD)) {
+                    debugLog("Mouse up - swiping left");
+                    swipeInProgress = true;
+                    swipeLeft();
+                    lastSwipeTime = now;
+                } else if (diffX > SWIPE_THRESHOLD || (diffX > 0 && avgVelocity > VELOCITY_THRESHOLD)) {
+                    debugLog("Mouse up - swiping right");
+                    swipeInProgress = true;
+                    swipeRight();
+                    lastSwipeTime = now;
+                } else {
+                    // Apply spring-back animation
+                    debugLog("Mouse up - spring back");
+                    springBackCard(diffX, avgVelocity);
+                }
+            });
+        }
+
+        // Spring-back animation with physics
+        function springBackCard(diffX, velocity) {
+            const card = document.getElementById('current-card');
+            if (!card) {
+                debugLog("Spring back failed - no card found");
+                return;
+            }
+            
+            // Calculate spring-back duration based on distance and velocity
+            const distance = Math.abs(diffX);
+            const velocityFactor = Math.abs(velocity) * 100;
+            const duration = Math.max(200, Math.min(SPRING_BACK_DURATION, 
+                SPRING_BACK_DURATION * (distance / 100) - velocityFactor));
+            
+            debugLog("Spring back with duration", duration, "ms");
+            
+            // Use CSS transition with custom cubic-bezier for spring effect
+            card.style.transition = `transform ${duration}ms cubic-bezier(0.175, 0.885, 0.32, 1.275)`;
+            card.style.transform = '';
+            
+            // Reset overlays with matching timing
+            const leftOverlay = document.getElementById('left-overlay');
+            const rightOverlay = document.getElementById('right-overlay');
+            
+            leftOverlay.style.transition = `opacity ${duration * 0.7}ms ease, transform ${duration * 0.7}ms ease`;
+            rightOverlay.style.transition = `opacity ${duration * 0.7}ms ease, transform ${duration * 0.7}ms ease`;
+            
+            leftOverlay.style.opacity = 0;
+            rightOverlay.style.opacity = 0;
+            leftOverlay.style.transform = 'translateX(-50px)';
+            rightOverlay.style.transform = 'translateX(50px)';
+            
+            // Reset Elon's face with slight delay
+            setTimeout(() => {
+                const elonFace = document.getElementById('elon-face');
+                if (elonFace && elonFace.src !== elonNormalImage) {
+                    elonFace.src = elonNormalImage;
+                }
+            }, duration * 0.3);
+            
+            // Remove transition after animation completes
+            setTimeout(() => {
+                card.style.transition = '';
+                leftOverlay.style.transition = '';
+                rightOverlay.style.transition = '';
+            }, duration);
+        }
+
+        // Update overlays based on swipe direction
+        function updateOverlays(diffX) {
+            const leftOverlay = document.getElementById('left-overlay');
+            const rightOverlay = document.getElementById('right-overlay');
+            
+            // Update overlay text if not already set and we have a current question
+            if (leftOverlay.textContent === '' && currentQuestion) {
+                leftOverlay.textContent = currentQuestion.leftResponse;
+            }
+            
+            if (rightOverlay.textContent === '' && currentQuestion) {
+                rightOverlay.textContent = currentQuestion.rightResponse;
+            }
+            
+            // Show/hide overlays based on swipe direction
+            const threshold = SWIPE_THRESHOLD / 4; // Lower threshold for earlier feedback
+            
+            if (diffX < -threshold) {
+                // Non-linear opacity curve for more natural feel
+                const opacity = Math.min(1, Math.pow(Math.abs(diffX) / SWIPE_THRESHOLD, 0.8) * 1.2);
+                leftOverlay.style.opacity = opacity;
+                // Reduced movement for more stable text
+                leftOverlay.style.transform = `translateX(${Math.max(-15, diffX/4)}px)`;
+                rightOverlay.style.opacity = 0;
+            } else if (diffX > threshold) {
+                // Non-linear opacity curve for more natural feel
+                const opacity = Math.min(1, Math.pow(Math.abs(diffX) / SWIPE_THRESHOLD, 0.8) * 1.2);
+                rightOverlay.style.opacity = opacity;
+                // Reduced movement for more stable text
+                rightOverlay.style.transform = `translateX(${Math.min(15, diffX/4)}px)`;
+                leftOverlay.style.opacity = 0;
+            } else {
+                leftOverlay.style.opacity = 0;
+                rightOverlay.style.opacity = 0;
+                leftOverlay.style.transform = 'translateX(-50px)';
+                rightOverlay.style.transform = 'translateX(50px)';
+            }
+        }
+
+        // Update Elon's face based on swipe direction
+        function updateElonFace(diffX) {
+            const elonFace = document.getElementById('elon-face');
+            if (!elonFace) return;
+            
+            const threshold = SWIPE_THRESHOLD / 2.5; // More responsive face changes
+            
+            if (diffX < -threshold) {
+                if (elonFace.src !== elonHappyImage) {
+                    elonFace.src = elonHappyImage;
+                }
+            } else if (diffX > threshold) {
+                if (elonFace.src !== elonAngryImage) {
+                    elonFace.src = elonAngryImage;
+                }
+            } else {
+                if (elonFace.src !== elonNormalImage) {
+                    elonFace.src = elonNormalImage;
+                }
+            }
+        }
+
+        // Reset card position with smooth animation
+        function resetCardPosition() {
+            const card = document.getElementById('current-card');
+            if (!card) {
+                debugLog("Reset card position failed - no card found");
+                return;
+            }
+            
+            debugLog("Resetting card position");
+            
+            // Use CSS transition for smooth reset
+            card.style.transition = 'transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            card.style.transform = '';
+            
+            // Reset overlays
+            const leftOverlay = document.getElementById('left-overlay');
+            const rightOverlay = document.getElementById('right-overlay');
+            
+            leftOverlay.style.opacity = 0;
+            rightOverlay.style.opacity = 0;
+            leftOverlay.style.transform = 'translateX(-50px)';
+            rightOverlay.style.transform = 'translateX(50px)';
+            
+            // Reset Elon's face
+            const elonFace = document.getElementById('elon-face');
+            if (elonFace) {
+                elonFace.src = elonNormalImage;
+            }
+            
+            // Remove transition after animation completes
+            setTimeout(() => {
+                card.style.transition = '';
+            }, 300);
+        }
+
+        // Swipe left action
+        function swipeLeft() {
+            if (isGameOver || isAnimating) {
+                debugLog("Swipe left ignored - game over or animation in progress");
+                swipeInProgress = false;
+                return;
+            }
+            
+            isAnimating = true;
+            debugLog("Swiping left, currentQuestionIndex:", currentQuestionIndex);
+            
+            const card = document.getElementById('current-card');
+            if (!card) {
+                debugLog("Swipe left failed - no card found");
+                isAnimating = false;
+                swipeInProgress = false;
+                return;
+            }
+            
+            // Use the stored current question for response
+            const leftOverlay = document.getElementById('left-overlay');
+            
+            // Ensure overlay text is set correctly for the current question
+            if (currentQuestion) {
+                leftOverlay.textContent = currentQuestion.leftResponse;
+                debugLog("Left response:", currentQuestion.leftResponse);
+            }
+            
+            // Show overlay with full opacity
+            leftOverlay.style.opacity = 1;
+            leftOverlay.style.transform = 'translateX(0)';
+            
+            // Add swipe animation class
+            card.style.transition = 'transform 0.4s cubic-bezier(0.22, 0.68, 0.32, 1.0), opacity 0.4s ease';
+            card.classList.add('swiped-left');
+            
+            // Update vitals based on left swipe impact
+            if (currentQuestion && currentQuestion.impact && currentQuestion.impact.left) {
+                for (const key in currentQuestion.impact.left) {
+                    if (vitalStatuses[key]) {
+                        vitalStatuses[key].value += currentQuestion.impact.left[key];
+                        vitalStatuses[key].value = Math.max(0, Math.min(100, vitalStatuses[key].value));
+                    }
+                }
+            }
+            
+            updateVitalElements();
+            
+            // Show Elon's happy face
+            const elonFace = document.getElementById('elon-face');
+            if (elonFace) {
+                elonFace.src = elonHappyImage;
+            }
+            
+            // Store the next question index
+            const nextQuestionIndex = currentQuestionIndex + 1;
+            debugLog("Next question index will be:", nextQuestionIndex);
+            
+            // Keep response visible for a moment before moving to next question
+            setTimeout(() => {
+                // Update the current question index
+                currentQuestionIndex = nextQuestionIndex;
+                debugLog("Updated currentQuestionIndex to:", currentQuestionIndex);
+                
+                // Fade out overlay before creating new card
+                leftOverlay.style.transition = 'opacity 0.2s ease';
+                leftOverlay.style.opacity = 0;
+                
+                setTimeout(() => {
+                    // Reset overlay
+                    leftOverlay.style.transition = '';
+                    leftOverlay.style.transform = 'translateX(-50px)';
+                    
+                    // Create next card
+                    createCard();
+                    
+                    // Reset animation flag after animation completes
+                    setTimeout(() => {
+                        isAnimating = false;
+                        swipeInProgress = false;
+                        debugLog("Animation complete, ready for next interaction");
+                    }, 300);
+                }, 200);
+            }, RESPONSE_DISPLAY_DURATION);
+        }
+
+        // Swipe right action
+        function swipeRight() {
+            if (isGameOver || isAnimating) {
+                debugLog("Swipe right ignored - game over or animation in progress");
+                swipeInProgress = false;
+                return;
+            }
+            
+            isAnimating = true;
+            debugLog("Swiping right, currentQuestionIndex:", currentQuestionIndex);
+            
+            const card = document.getElementById('current-card');
+            if (!card) {
+                debugLog("Swipe right failed - no card found");
+                isAnimating = false;
+                swipeInProgress = false;
+                return;
+            }
+            
+            // Use the stored current question for response
+            const rightOverlay = document.getElementById('right-overlay');
+            
+            // Ensure overlay text is set correctly for the current question
+            if (currentQuestion) {
+                rightOverlay.textContent = currentQuestion.rightResponse;
+                debugLog("Right response:", currentQuestion.rightResponse);
+            }
+            
+            // Show overlay with full opacity
+            rightOverlay.style.opacity = 1;
+            rightOverlay.style.transform = 'translateX(0)';
+            
+            // Add swipe animation class
+            card.style.transition = 'transform 0.4s cubic-bezier(0.22, 0.68, 0.32, 1.0), opacity 0.4s ease';
+            card.classList.add('swiped-right');
+            
+            // Update vitals based on right swipe impact
+            if (currentQuestion && currentQuestion.impact && currentQuestion.impact.right) {
+                for (const key in currentQuestion.impact.right) {
+                    if (vitalStatuses[key]) {
+                        vitalStatuses[key].value += currentQuestion.impact.right[key];
+                        vitalStatuses[key].value = Math.max(0, Math.min(100, vitalStatuses[key].value));
+                    }
+                }
+            }
+            
+            updateVitalElements();
+            
+            // Show Elon's angry face
+            const elonFace = document.getElementById('elon-face');
+            if (elonFace) {
+                elonFace.src = elonAngryImage;
+            }
+            
+            // Store the next question index
+            const nextQuestionIndex = currentQuestionIndex + 1;
+            debugLog("Next question index will be:", nextQuestionIndex);
+            
+            // Keep response visible for a moment before moving to next question
+            setTimeout(() => {
+                // Update the current question index
+                currentQuestionIndex = nextQuestionIndex;
+                debugLog("Updated currentQuestionIndex to:", currentQuestionIndex);
+                
+                // Fade out overlay before creating new card
+                rightOverlay.style.transition = 'opacity 0.2s ease';
+                rightOverlay.style.opacity = 0;
+                
+                setTimeout(() => {
+                    // Reset overlay
+                    rightOverlay.style.transition = '';
+                    rightOverlay.style.transform = 'translateX(50px)';
+                    
+                    // Create next card
+                    createCard();
+                    
+                    // Reset animation flag after animation completes
+                    setTimeout(() => {
+                        isAnimating = false;
+                        swipeInProgress = false;
+                        debugLog("Animation complete, ready for next interaction");
+                    }, 300);
+                }, 200);
+            }, RESPONSE_DISPLAY_DURATION);
+        }
+
+        // Shuffle array (Fisher-Yates algorithm)
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        // Initialize game
+        function initGame() {
+            // Reset game state
+            currentQuestionIndex = 0;
+            isGameOver = false;
+            currentQuestion = null;
+            isAnimating = false;
+            swipeInProgress = false;
+            
+            debugLog("Initializing game");
+            
+            // Reset vital statuses
+            Object.keys(vitalStatuses).forEach(key => {
+                vitalStatuses[key].value = 50;
+            });
+            
+            // Generate vital elements
+            createVitalElements();
+            
+            // Shuffle questions
+            shuffledQuestions = shuffleArray([...questions]);
+            debugLog("Shuffled questions, total:", shuffledQuestions.length);
+            
+            // Hide game over screen
+            document.getElementById('game-over').classList.remove('show');
+            
+            // Create first card
+            createCard();
+        }
+
+        // Restart game
+        function restartGame() {
+            debugLog("Restarting game");
+            initGame();
+        }
+
+        // Set up event listeners
+        document.getElementById('restart-button').addEventListener('click', restartGame);
+        document.getElementById('quit-button').addEventListener('click', () => {
+            document.getElementById('game-over').classList.remove('show');
+        });
+
+        // Initialize game on page load
+        window.addEventListener('load', initGame);
+    </script>
+</body>
+</html>
