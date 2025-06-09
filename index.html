@@ -671,9 +671,9 @@
             const leftOverlay = document.getElementById('left-overlay');
             const rightOverlay = document.getElementById('right-overlay');
             
-            // Always set the text content first to ensure it's ready when shown - FIXED: Swapped text assignment
-            rightOverlay.textContent = currentQuestion.leftResponse;
-            leftOverlay.textContent = currentQuestion.rightResponse;
+            // Set overlay text content based on current question
+            leftOverlay.textContent = currentQuestion.leftResponse;
+            rightOverlay.textContent = currentQuestion.rightResponse;
             
             if (deltaX > SWIPE_THRESHOLD) {
                 // Show right (YES) overlay
@@ -790,9 +790,9 @@
             const leftOverlay = document.getElementById('left-overlay');
             const rightOverlay = document.getElementById('right-overlay');
             
-            // Always set the text content first to ensure it's ready when shown - FIXED: Swapped text assignment
-            rightOverlay.textContent = currentQuestion.leftResponse;
-            leftOverlay.textContent = currentQuestion.rightResponse;
+            // Set overlay text content based on current question
+            leftOverlay.textContent = currentQuestion.leftResponse;
+            rightOverlay.textContent = currentQuestion.rightResponse;
             
             if (isRight) {
                 // Right swipe (YES)
