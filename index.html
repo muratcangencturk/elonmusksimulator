@@ -52,6 +52,11 @@
             opacity: 0.8;
         }
 
+        .scoreboard {
+            margin-top: 5px;
+            font-size: 1em;
+        }
+
         .vitals {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
@@ -352,6 +357,7 @@
         <div class="header">
             <h1>ELON MUSK SIMULATOR</h1>
             <p>This is Elon Musk!</p>
+            <div class="scoreboard">Score: <span id="current-score">0</span> | Best: <span id="best-score">0</span></div>
         </div>
         
         <div class="vitals" id="vitals">
@@ -369,6 +375,7 @@
     <div class="game-over" id="game-over">
         <h2>Game Over: Elon has lost interest in you...</h2>
         <p>Your decisions have led to a catastrophic failure in one of Elon's ventures.</p>
+        <p id="game-over-score"></p>
         <div class="control-buttons">
             <button class="control-button restart-button" id="restart-button">Try Again</button>
             <button class="control-button quit-button" id="quit-button">Quit</button>
@@ -405,6 +412,8 @@
         let isGameOver = false;
         let shuffledQuestions = [];
         let currentQuestion = null;
+        let currentScore = 0;
+        let bestScore = parseInt(localStorage.getItem('bestScore')) || 0;
         
         // Animation and interaction state flags
         let isAnimating = false;
@@ -442,6 +451,20 @@
             if (debugMode) {
                 console.log(...args);
             }
+        }
+
+        function updateScoreDisplay() {
+            document.getElementById('current-score').textContent = currentScore;
+            document.getElementById('best-score').textContent = bestScore;
+        }
+
+        function incrementScore() {
+            currentScore++;
+            if (currentScore > bestScore) {
+                bestScore = currentScore;
+                localStorage.setItem('bestScore', bestScore);
+            }
+            updateScoreDisplay();
         }
 
         // Create vital status elements
@@ -510,6 +533,7 @@
         // Show game over screen
         function showGameOver() {
             isGameOver = true;
+            document.getElementById('game-over-score').textContent = `Score: ${currentScore} (Best: ${bestScore})`;
             document.getElementById('game-over').classList.add('show');
         }
 
@@ -847,16 +871,19 @@
         // Apply the impact of a decision to vital statuses
         function applyDecisionImpact(isRight) {
             if (!currentQuestion || !currentQuestion.impact) return;
-            
+
             const impact = isRight ? currentQuestion.impact.right : currentQuestion.impact.left;
-            
+
             // Apply each impact value
             for (const [key, value] of Object.entries(impact)) {
                 if (vitalStatuses[key]) {
                     vitalStatuses[key].value = Math.max(0, Math.min(100, vitalStatuses[key].value + value));
                 }
             }
-            
+
+            // Increment score before checking for game over
+            incrementScore();
+
             // Add Innovation impact for technology-related questions if not explicitly defined
             if (!impact.innovation) {
                 // Check if this is a technology-related question that should affect innovation
@@ -961,7 +988,9 @@
             // Reset game state
             isGameOver = false;
             currentQuestionIndex = 0;
-            
+            currentScore = 0;
+            bestScore = parseInt(localStorage.getItem('bestScore')) || bestScore;
+
             // Reset vital statuses
             for (const key in vitalStatuses) {
                 vitalStatuses[key].value = 50;
@@ -978,7 +1007,9 @@
             
             // Hide game over screen
             document.getElementById('game-over').classList.remove('show');
-            
+
+            updateScoreDisplay();
+
             // Create the first card
             createCard();
         }
