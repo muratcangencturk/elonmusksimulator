@@ -957,7 +957,7 @@
         }
 
         // Initialize the game
-        function initGame() {
+        function initGame(allQuestionsArray) {
             // Reset game state
             isGameOver = false;
             currentQuestionIndex = 0;
@@ -970,9 +970,8 @@
             // Create vital status elements
             createVitalElements();
             
-            // Combine and shuffle all questions
-            const allQuestions = combineAllQuestions();
-            shuffledQuestions = shuffleArray([...allQuestions]);
+            // Shuffle the provided questions
+            shuffledQuestions = shuffleArray([...allQuestionsArray]);
             
             console.log(`Game initialized with ${shuffledQuestions.length} questions`);
             
@@ -985,23 +984,23 @@
 
         // Set up restart button
         document.getElementById('restart-button').addEventListener('click', function() {
-            initGame();
+            initGame(window.allQuestions);
         });
 
         // Set up quit button
         document.getElementById('quit-button').addEventListener('click', function() {
             // Could redirect to another page or close the window
             // For now, just restart
-            initGame();
+            initGame(window.allQuestions);
         });
 
         // Initialize the game when the page loads
         window.addEventListener('load', function() {
-            // Combine all questions
+            // Combine all questions and store globally
             window.allQuestions = combineAllQuestions();
-            
-            // Initialize the game
-            initGame();
+
+            // Initialize the game using the precombined questions
+            initGame(window.allQuestions);
         });
     </script>
 </body>
