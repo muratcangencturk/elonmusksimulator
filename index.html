@@ -952,7 +952,7 @@
                 ...enhancedBatch5
             ];
             
-            console.log(`Combined ${allQuestions.length} questions from all sources`);
+            debugLog(`Combined ${allQuestions.length} questions from all sources`);
             return allQuestions;
         }
 
@@ -974,7 +974,7 @@
             const allQuestions = combineAllQuestions();
             shuffledQuestions = shuffleArray([...allQuestions]);
             
-            console.log(`Game initialized with ${shuffledQuestions.length} questions`);
+            debugLog(`Game initialized with ${shuffledQuestions.length} questions`);
             
             // Hide game over screen
             document.getElementById('game-over').classList.remove('show');
