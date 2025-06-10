@@ -343,3 +343,20 @@ body {
 .quit-button:hover {
     background: #c0392b;
 }
+
+# Analytics consent banner
+#analytics-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 1001;
+}
+
+#analytics-banner button {
+    margin-left: 10px;
+}
