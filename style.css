@@ -111,10 +111,13 @@ body {
     max-width: 100%;
 }
 
-/* Fix for X (Twitter) symbol alignment */
+/* Fix for X (Twitter) bar alignment */
+.vital:nth-child(12) {
+    margin-top: -2px; /* Shift entire bar up to match others */
+}
 .vital:nth-child(12) .vital-name {
-    margin-top: 0; /* Adjust to align with other bars */
-    padding-top: 2px; /* Add padding to maintain visual spacing */
+    margin-top: 0; /* Align label */
+    padding-top: 2px; /* Maintain visual spacing */
 }
 
 .card-container {
