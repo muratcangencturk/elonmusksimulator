@@ -674,6 +674,5 @@ document.getElementById('quit-button').addEventListener('click', function() {
 // Initialize the game when the page loads
 
 window.addEventListener('load', function() {
-=======
     initGame();
 });
