@@ -1,4 +1,4 @@
-const new_questions_batch1 = [
+[
   {
     "text": "Donald Trump calls, says he has a \"tremendous\" idea for a new social media platform to rival X. Wants you to fund it. \"It'll be HUGE!\"",
     "emojis": [
@@ -259,4 +259,4 @@ const new_questions_batch1 = [
       }
     }
   }
-];
+]
