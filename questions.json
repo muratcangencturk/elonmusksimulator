@@ -1,4 +1,4 @@
-const questions = [
+[
   {
     "text": "Create a Tesla feature that lets cars communicate with each other using emoji light displays?",
     "rightResponse": "'Road rage becomes road rave! 😎 to 🤬 in seconds! Cars flashing memes at each other in traffic!'",
@@ -11999,4 +11999,4 @@ const questions = [
       }
     }
   }
-];
+]

@@ -1,8 +1,13 @@
 # Elon Musk Simulator
 
-**Elon Musk Simulator** is a tongue-in-cheek browser game where you try to keep Elon's many ventures afloat. Each turn presents a question with absurd proposals. Swipe **left** or **right** to answer and balance the vital stats for SpaceX, Tesla, and other Musk projects. Let any vital reach 0 or 100 and it's game over!
+**Elon Musk Simulator** is a short satirical web game where you juggle the many businesses and whims of a fictionalized Elon Musk. Swipe **left** or **right** on ridiculous proposals to keep the different project "vitals" in balance. If any meter hits 0 or 100, it's game over.
 
-## Playing the Game
+This game is purely a parody created for entertainment and is not affiliated with Elon Musk or his companies.
+
+## Gameplay
+Each turn presents a question card. Swiping right accepts the idea, swiping left rejects it. Your choice alters the stats for SpaceX, Tesla, public opinion, and other ventures. Survive as long as possible without any vital running dry or overflowing.
+
+## Run the Game Locally
 1. Clone or download this repository.
 2. Open `index.html` in a modern web browser (double click the file or serve it locally).
 3. Choose your language from the dropdown at the top.
@@ -11,7 +16,35 @@
 
 Screenshots below show a glimpse of the interface:
 
-![Elon happy](elon_musk_happy.png)
-![Elon angry](elon_musk_angry.png)
+```bash
+node normalize_questions.js
+```
+
+The script scans `questions.json` and all `new_questions_batch*.json` files in
+the repository, swaps responses when the left choice carries a positive impact
+and the right choice a negative one, then writes the normalized JSON back to
+disk.
+
+## Live Demo
+
+Play it online here:
+<https://muratcangencturk.github.io/elonmusksimulator/>
 
 This project is a parody and is provided for entertainment. It is licensed under the [Apache License 2.0](LICENSE).
+
+
+## Contributing
+
+Questions or improvements are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. By participating you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## Optional Analytics
+
+The game can collect anonymous usage statistics using the open source [Plausible](https://plausible.io/) platform.
+To enable tracking, edit `analytics.js` and set `ANALYTICS_DOMAIN` to your Plausible domain, for example:
+
+```javascript
+const ANALYTICS_DOMAIN = 'yourgame.example.com';
+```
+
+When configured, players will be asked for consent before the analytics script loads.
+

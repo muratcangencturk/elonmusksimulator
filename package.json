@@ -1,0 +1,19 @@
+{
+  "name": "elonmusksimulator",
+  "version": "1.0.0",
+  "description": "**Elon Musk Simulator** is a tongue-in-cheek browser game where you try to keep Elon's many ventures afloat. Each turn presents a question with absurd proposals. Swipe **left** or **right** to answer and balance the vital stats for SpaceX, Tesla, and other Musk projects. Let any vital reach 0 or 100 and it's game over!",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.0.0"
+  },
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001721"
+  }
+}
