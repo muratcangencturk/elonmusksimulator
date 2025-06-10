@@ -14,3 +14,5 @@ Screenshots below show a glimpse of the interface:
 ![Elon angry](elon_musk_angry.png)
 
 This project is a parody and is provided for entertainment. It is licensed under the [Apache License 2.0](LICENSE).
+
+See [CREDITS.md](CREDITS.md) for image attributions and notes about the origin of the question text.
