@@ -1,4 +1,4 @@
-const new_questions_batch2 = [
+[
   {
     "text": "President Erdogan invites you to build a Tesla Gigafactory in Turkey. Offers significant tax incentives and access to European markets.",
     "emojis": [
@@ -779,4 +779,4 @@ const new_questions_batch2 = [
       }
     }
   }
-];
+]

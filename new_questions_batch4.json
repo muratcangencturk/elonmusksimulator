@@ -1,4 +1,4 @@
-const new_questions_batch4 = [
+[
   {
     "text": "The ghost of Steve Jobs appears in your dream, suggesting you should make all your products 'more minimalist' with 'fewer buttons and options.'",
     "emojis": [
@@ -1013,4 +1013,4 @@ const new_questions_batch4 = [
       }
     }
   }
-];
+]
