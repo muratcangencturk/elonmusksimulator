@@ -63,22 +63,40 @@ function debugLog(...args) {
 // Create vital status elements
 function createVitalElements() {
     const vitalsContainer = document.getElementById('vitals');
-    vitalsContainer.innerHTML = '';
-    
+    vitalsContainer.textContent = '';
+
     Object.entries(vitalStatuses).forEach(([key, vital]) => {
         const vitalDiv = document.createElement('div');
         vitalDiv.className = 'vital';
         vitalDiv.title = `${vital.label} - ${vital.value}`;
-        
-        vitalDiv.innerHTML = `
-            <div>${vital.symbol}</div>
-            <div class="vital-level">
-                <div class="vital-fill" style="width: ${vital.value}%; background: ${vital.color}"></div>
-                <div class="vital-tooltip">${vital.label}: ${vital.value}</div>
-            </div>
-            <div class="vital-name" style="color: ${vital.color}">${vital.label}</div>
-        `;
-        
+
+        const symbolDiv = document.createElement('div');
+        symbolDiv.textContent = vital.symbol;
+
+        const levelDiv = document.createElement('div');
+        levelDiv.className = 'vital-level';
+
+        const fillDiv = document.createElement('div');
+        fillDiv.className = 'vital-fill';
+        fillDiv.style.width = `${vital.value}%`;
+        fillDiv.style.background = vital.color;
+
+        const tooltipDiv = document.createElement('div');
+        tooltipDiv.className = 'vital-tooltip';
+        tooltipDiv.textContent = `${vital.label}: ${vital.value}`;
+
+        levelDiv.appendChild(fillDiv);
+        levelDiv.appendChild(tooltipDiv);
+
+        const nameDiv = document.createElement('div');
+        nameDiv.className = 'vital-name';
+        nameDiv.style.color = vital.color;
+        nameDiv.textContent = vital.label;
+
+        vitalDiv.appendChild(symbolDiv);
+        vitalDiv.appendChild(levelDiv);
+        vitalDiv.appendChild(nameDiv);
+
         vitalsContainer.appendChild(vitalDiv);
     });
 }
@@ -141,12 +159,12 @@ function createCard() {
     debugLog("Creating new card, currentQuestionIndex:", currentQuestionIndex);
     
     const cardContainer = document.getElementById('card-container');
-    cardContainer.innerHTML = '';
+    cardContainer.textContent = '';
     
     // Reset if we've gone through all questions
     if (currentQuestionIndex >= shuffledQuestions.length) {
         debugLog("Reached end of questions, reshuffling");
-        shuffledQuestions = shuffleArray([...allQuestions]);
+        shuffledQuestions = shuffleArray([...window.allQuestions]);
         currentQuestionIndex = 0;
     }
     
@@ -159,19 +177,45 @@ function createCard() {
     card.className = 'card next-card-enter';
     card.id = 'current-card';
     
-    // Generate emoji HTML
-    const emojisHtml = currentQuestion.emojis.map(emoji => `<span>${emoji}</span>`).join('');
-    
-    // Set card content
-    card.innerHTML = `
-        <p class="swipe-instruction">← swipe left or right to answer →</p>
-        <div class="card-emojis">${emojisHtml}</div>
-        <h2>${currentQuestion.text}</h2>
-        <div class="elon-illustration">
-            <img src="${elonNormalImage}" alt="Elon Musk" class="elon-face" id="elon-face">
-        </div>
-        <p class="swipe-instruction">← swipe left or right to answer →</p>
-    `;
+    // Top instruction
+    const topInstruction = document.createElement('p');
+    topInstruction.className = 'swipe-instruction';
+    topInstruction.textContent = '← swipe left or right to answer →';
+
+    // Emoji container
+    const emojiDiv = document.createElement('div');
+    emojiDiv.className = 'card-emojis';
+    currentQuestion.emojis.forEach(emoji => {
+        const span = document.createElement('span');
+        span.textContent = emoji;
+        emojiDiv.appendChild(span);
+    });
+
+    // Question text
+    const questionHeading = document.createElement('h2');
+    questionHeading.textContent = currentQuestion.text;
+
+    // Elon illustration
+    const illustration = document.createElement('div');
+    illustration.className = 'elon-illustration';
+    const img = document.createElement('img');
+    img.src = elonNormalImage;
+    img.alt = 'Elon Musk';
+    img.className = 'elon-face';
+    img.id = 'elon-face';
+    illustration.appendChild(img);
+
+    // Bottom instruction
+    const bottomInstruction = document.createElement('p');
+    bottomInstruction.className = 'swipe-instruction';
+    bottomInstruction.textContent = '← swipe left or right to answer →';
+
+    // Append all parts to card
+    card.appendChild(topInstruction);
+    card.appendChild(emojiDiv);
+    card.appendChild(questionHeading);
+    card.appendChild(illustration);
+    card.appendChild(bottomInstruction);
     
     // Add the card to the container
     cardContainer.appendChild(card);
@@ -549,25 +593,32 @@ function addInnovationImpactToQuestions(questionsArray) {
 }
 
 // Combine all questions
-function combineAllQuestions() {
-    // Add innovation impact to existing questions
-    const enhancedOriginalQuestions = addInnovationImpactToQuestions(questions);
-    const enhancedBatch1 = addInnovationImpactToQuestions(new_questions_batch1);
-    const enhancedBatch2 = addInnovationImpactToQuestions(new_questions_batch2);
-    const enhancedBatch3 = addInnovationImpactToQuestions(new_questions_batch3);
-    const enhancedBatch4 = addInnovationImpactToQuestions(new_questions_batch4);
-    const enhancedBatch5 = addInnovationImpactToQuestions(new_questions_batch5);
-    
-    // Combine all question sets
-    const allQuestions = [
-        ...enhancedOriginalQuestions,
-        ...enhancedBatch1,
-        ...enhancedBatch2,
-        ...enhancedBatch3,
-        ...enhancedBatch4,
-        ...enhancedBatch5
+// Load all question sets from JSON files
+async function loadAllQuestions() {
+    const files = [
+        'questions.json',
+        'new_questions_batch1.json',
+        'new_questions_batch2.json',
+        'new_questions_batch3.json',
+        'new_questions_batch4.json',
+        'new_questions_batch5.json'
     ];
-    
+
+    const responses = await Promise.all(
+        files.map(file => fetch(file).then(res => res.json()))
+    );
+
+    const [original, batch1, batch2, batch3, batch4, batch5] = responses;
+
+    const allQuestions = [
+        ...addInnovationImpactToQuestions(original),
+        ...addInnovationImpactToQuestions(batch1),
+        ...addInnovationImpactToQuestions(batch2),
+        ...addInnovationImpactToQuestions(batch3),
+        ...addInnovationImpactToQuestions(batch4),
+        ...addInnovationImpactToQuestions(batch5)
+    ];
+
     console.log(`Combined ${allQuestions.length} questions from all sources`);
     return allQuestions;
 }
@@ -586,9 +637,8 @@ function initGame() {
     // Create vital status elements
     createVitalElements();
     
-    // Combine and shuffle all questions
-    const allQuestions = combineAllQuestions();
-    shuffledQuestions = shuffleArray([...allQuestions]);
+    // Shuffle questions that were loaded
+    shuffledQuestions = shuffleArray([...window.allQuestions]);
     
     console.log(`Game initialized with ${shuffledQuestions.length} questions`);
     
@@ -612,10 +662,10 @@ document.getElementById('quit-button').addEventListener('click', function() {
 });
 
 // Initialize the game when the page loads
-window.addEventListener('load', function() {
-    // Combine all questions
-    window.allQuestions = combineAllQuestions();
-    
+window.addEventListener('load', async function() {
+    // Load all questions from JSON files
+    window.allQuestions = await loadAllQuestions();
+
     // Initialize the game
     initGame();
 });
