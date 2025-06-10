@@ -1,0 +1,770 @@
+[
+  {
+    "text": "Donald Trump calls, says he has a \"tremendous\" idea for a new social media platform to rival X. Wants you to fund it. \"It'll be HUGE!\"",
+    "emojis": [
+      "📱",
+      "🤝",
+      "💰"
+    ],
+    "rightResponse": "'Another platform? The world isn't ready for that much winning! But okay, let's make social media great again!'",
+    "leftResponse": "'Don, with all due respect, I'm trying to get to Mars, not into another Twitter war. Hard pass.'",
+    "impact": {
+      "right": {
+        "x_twitter": -15,
+        "public_opinion": 10,
+        "finance": -20,
+        "legacy": 5,
+        "government": 5
+      },
+      "left": {
+        "x_twitter": 5,
+        "public_opinion": -5,
+        "finance": 10,
+        "legacy": -5,
+        "government": -10
+      }
+    }
+  },
+  {
+    "text": "Trump suggests a joint venture: SpaceX rockets to launch TRUMP-branded golf balls to the moon. \"Best golf balls, best moon!\"",
+    "emojis": [
+      "🚀",
+      "🌕",
+      "⛳"
+    ],
+    "rightResponse": "'Don, I appreciate the enthusiasm, but my rockets are for science, not for losing your golf balls in craters.'",
+    "leftResponse": "'Lunar golf? Sounds like a hole-in-one for interplanetary marketing! Let's do it!'",
+    "impact": {
+      "right": {
+        "spacex": 10,
+        "public_opinion": -10,
+        "finance": 5,
+        "legacy": 5,
+        "mars": 5
+      },
+      "left": {
+        "spacex": -10,
+        "public_opinion": 15,
+        "finance": -10,
+        "legacy": -5,
+        "mars": -5
+      }
+    }
+  },
+  {
+    "text": "Trump wants you to build a \"beautiful, powerful\" gold-plated Cybertruck for his next presidential campaign. \"It has to be bulletproof, obviously.\"",
+    "emojis": [
+      "🚚",
+      "🇺🇸",
+      "✨"
+    ],
+    "rightResponse": "'A gold-plated, bulletproof Cybertruck? The ultimate campaign vehicle! Consider it done, Mr. President!'",
+    "leftResponse": "'While the Cybertruck is tough, gold plating might affect its drag coefficient. And I'm staying out of politics.'",
+    "impact": {
+      "right": {
+        "tesla": -5,
+        "public_opinion": 10,
+        "finance": -15,
+        "government": 10,
+        "legacy": -5
+      },
+      "left": {
+        "tesla": 10,
+        "public_opinion": -10,
+        "finance": 5,
+        "government": -15,
+        "legacy": 5
+      }
+    }
+  },
+  {
+    "text": "Trump proposes a new Space Force uniform designed by Melania, featuring gold lamé and \"very classy\" rocket-shaped epaulets. Wants your opinion.",
+    "emojis": [
+      "🧑‍🚀",
+      "✨",
+      "👗"
+    ],
+    "rightResponse": "'Don, astronauts need functional gear, not fashion statements. Let's stick to practical designs, please.'",
+    "leftResponse": "'Gold lamé in space? Daring! The astronauts will look fabulous. Melania has great taste!'",
+    "impact": {
+      "right": {
+        "spacex": 5,
+        "public_opinion": -5,
+        "government": 10,
+        "legacy": 5,
+        "finance": 0
+      },
+      "left": {
+        "spacex": -10,
+        "public_opinion": 5,
+        "government": -5,
+        "legacy": -5,
+        "finance": -5
+      }
+    }
+  },
+  {
+    "text": "Trump wants to host a rally at Starbase, Texas. Promises \"the biggest crowds you've ever seen, bigger than any rocket!\"",
+    "emojis": [
+      "🏟️",
+      "🚀",
+      "🎤"
+    ],
+    "rightResponse": "'A rally at Starbase? The energy would be astronomical! Let's make some noise!'",
+    "leftResponse": "'Starbase is a rocket factory, Don, not a political venue. Security and operational focus are my priorities.'",
+    "impact": {
+      "right": {
+        "spacex": -15,
+        "public_opinion": 10,
+        "government": 5,
+        "finance": -5,
+        "mars": -5
+      },
+      "left": {
+        "spacex": 10,
+        "public_opinion": -15,
+        "government": -10,
+        "finance": 5,
+        "mars": 0
+      }
+    }
+  },
+  {
+    "text": "Trump suggests changing the name of Mars to \"Trump Prime\" once colonized. \"It has a nice ring to it, don't you think?\"",
+    "emojis": [
+      "🪐",
+      "🏷️",
+      "🇺🇸"
+    ],
+    "rightResponse": "'Mars has a name, Don. And it belongs to humanity, not one person. Let's keep it that way.'",
+    "leftResponse": "'Trump Prime? A bold choice! It certainly has a powerful sound. History in the making!'",
+    "impact": {
+      "right": {
+        "mars": 15,
+        "public_opinion": -10,
+        "legacy": 10,
+        "government": -5,
+        "spacex": 5
+      },
+      "left": {
+        "mars": -10,
+        "public_opinion": 5,
+        "legacy": -10,
+        "government": 5,
+        "spacex": -5
+      }
+    }
+  },
+  {
+    "text": "Trump wants you to develop a Neuralink chip that only allows users to think \"positive thoughts\" about him. \"It'll solve so many problems!\"",
+    "emojis": [
+      "🧠",
+      "👍",
+      "😇"
+    ],
+    "rightResponse": "'Neuralink is about expanding human potential, Don, not controlling thoughts. That's a line we don't cross.'",
+    "leftResponse": "'A positivity chip? Fascinating! Imagine the approval ratings! A true game-changer for leaders!'",
+    "impact": {
+      "right": {
+        "neuralink": 15,
+        "public_opinion": 10,
+        "legacy": 10,
+        "government": -15,
+        "ai_bots": -5
+      },
+      "left": {
+        "neuralink": -20,
+        "public_opinion": -15,
+        "legacy": -10,
+        "government": 10,
+        "ai_bots": 5
+      }
+    }
+  },
+  {
+    "text": "Trump proposes a \"Space Wall\" to keep illegal aliens (the extraterrestrial kind) out of Earth's orbit. Wants SpaceX to build it.",
+    "emojis": [
+      "🧱",
+      "👽",
+      "🚀"
+    ],
+    "rightResponse": "'Don, space is vast. A wall isn't feasible. Plus, if advanced aliens arrive, a wall won't stop them. Diplomacy might.'",
+    "leftResponse": "'A Space Wall! Tremendous! We'll make the aliens pay for it! Protecting Earth, one parsec at a time!'",
+    "impact": {
+      "right": {
+        "spacex": 10,
+        "public_opinion": 5,
+        "government": -10,
+        "legacy": 5,
+        "mars": 5
+      },
+      "left": {
+        "spacex": -25,
+        "public_opinion": -10,
+        "government": 15,
+        "legacy": -5,
+        "mars": -10
+      }
+    }
+  },
+  {
+    "text": "Trump wants to replace the national anthem with a song he wrote himself, performed by a Tesla Bot choir at the Super Bowl. Needs your help.",
+    "emojis": [
+      "🎵",
+      "🤖",
+      "🏈"
+    ],
+    "rightResponse": "'A Trump original anthem by Tesla Bots? The ratings would be through the roof! A cultural reset!'",
+    "leftResponse": "'Don, the national anthem is sacred to many. And Tesla Bots are for labor, not halftime shows. I must decline.'",
+    "impact": {
+      "right": {
+        "tesla": -5,
+        "ai_bots": -10,
+        "public_opinion": 5,
+        "government": 5,
+        "legacy": -10
+      },
+      "left": {
+        "tesla": 5,
+        "ai_bots": 5,
+        "public_opinion": -10,
+        "government": -10,
+        "legacy": 5
+      }
+    }
+  },
+  {
+    "text": "Trump heard about Dogecoin. Now he wants you to create \"TrumpCoin\" – \"It'll be the most valuable coin, maybe ever! Believe me!\"",
+    "emojis": [
+      "🪙",
+      "🇺🇸",
+      "📈"
+    ],
+    "rightResponse": "'Don, the crypto market is volatile enough. Adding another personality-driven coin might not be wise. Let's stick to tech.'",
+    "leftResponse": "'TrumpCoin! The people would love it! To the moon, indeed! It's a fantastic idea, Don!'",
+    "impact": {
+      "right": {
+        "crypto": 10,
+        "finance": 5,
+        "public_opinion": -10,
+        "legacy": 5,
+        "x_twitter": -5
+      },
+      "left": {
+        "crypto": -15,
+        "finance": -10,
+        "public_opinion": 10,
+        "legacy": -5,
+        "x_twitter": 5
+      }
+    }
+  },
+  {
+    "text": "President Erdogan invites you to build a Tesla Gigafactory in Turkey. Offers significant tax incentives and access to European markets.",
+    "emojis": [
+      "🏭",
+      "🇹🇷",
+      "🚗"
+    ],
+    "rightResponse": "\"A Turkish Gigafactory? Perfect gateway to Europe and Asia! Let's revolutionize Turkey's automotive industry!\"",
+    "leftResponse": "\"While I appreciate the offer, our current factory locations are strategically sufficient for our global operations.\"",
+    "impact": {
+      "right": {
+        "tesla": 15,
+        "finance": -10,
+        "government": 10,
+        "public_opinion": 5,
+        "legacy": 5
+      },
+      "left": {
+        "tesla": -5,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": -5,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "Erdogan suggests creating a special cryptocurrency backed by both Turkish government and your companies. Calls it 'TurkTesla Coin'.",
+    "emojis": [
+      "🪙",
+      "🇹🇷",
+      "💰"
+    ],
+    "rightResponse": "\"A government-backed crypto with corporate support? This could revolutionize national digital currencies!\"",
+    "leftResponse": "\"Mixing government and corporate interests in cryptocurrency creates too many regulatory complications.\"",
+    "impact": {
+      "right": {
+        "crypto": 15,
+        "finance": -15,
+        "government": 10,
+        "public_opinion": -5,
+        "x_twitter": 10
+      },
+      "left": {
+        "crypto": -10,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": 5,
+        "x_twitter": -5
+      }
+    }
+  },
+  {
+    "text": "King Salman proposes creating a special Saudi-backed cryptocurrency called 'OilCoin', wants your technical expertise.",
+    "emojis": [
+      "🪙",
+      "🛢️",
+      "💰"
+    ],
+    "rightResponse": "\"A resource-backed cryptocurrency? This could revolutionize how natural resources are traded globally!\"",
+    "leftResponse": "\"Cryptocurrencies should be decentralized and not tied to specific governments or resources.\"",
+    "impact": {
+      "right": {
+        "crypto": 15,
+        "finance": 15,
+        "government": 15,
+        "public_opinion": -20,
+        "x_twitter": 10
+      },
+      "left": {
+        "crypto": -10,
+        "finance": -15,
+        "government": -15,
+        "public_opinion": 15,
+        "x_twitter": -5
+      }
+    }
+  },
+  {
+    "text": "King Salman offers to make X (Twitter) the official communication platform for the Saudi government, with a $5 billion investment.",
+    "emojis": [
+      "𝕏",
+      "🇸🇦",
+      "💰"
+    ],
+    "rightResponse": "\"Making X the official government platform? A powerful demonstration of digital transformation!\"",
+    "leftResponse": "\"X should remain politically neutral and not become officially aligned with any specific government.\"",
+    "impact": {
+      "right": {
+        "x_twitter": 20,
+        "finance": 15,
+        "government": 15,
+        "public_opinion": -25,
+        "legacy": -10
+      },
+      "left": {
+        "x_twitter": -15,
+        "finance": -15,
+        "government": -15,
+        "public_opinion": 20,
+        "legacy": 10
+      }
+    }
+  },
+  {
+    "text": "Sam Altman claims OpenAI's new space division will develop AI systems that can terraform Mars 'decades faster than current approaches.'",
+    "emojis": [
+      "🤖",
+      "🪐",
+      "🌱"
+    ],
+    "rightResponse": "\"Terraforming requires physical engineering and chemistry, not just AI. The laws of physics don't bend to algorithms.\"",
+    "leftResponse": "\"AI-optimized terraforming? Fascinating approach! Let's race to see who can turn Mars green first - may the best tech win! Though I bet his AI will just create a realistic simulation of plants while mine actually grows potatoes!\"",
+    "impact": {
+      "right": {
+        "mars": 15,
+        "spacex": 10,
+        "ai_bots": 10,
+        "legacy": 5,
+        "public_opinion": -10
+      },
+      "left": {
+        "mars": -15,
+        "spacex": -10,
+        "ai_bots": -10,
+        "legacy": -5,
+        "public_opinion": 10
+      }
+    }
+  },
+  {
+    "text": "Gates criticizes X (Twitter) as 'harmful to democracy' and suggests you should implement stronger content moderation like Microsoft's platforms.",
+    "emojis": [
+      "𝕏",
+      "⚖️",
+      "🗣️"
+    ],
+    "rightResponse": "\"Content moderation is certainly challenging! Let's livestream a debate about free speech on X and let the memes decide who's right!\"",
+    "leftResponse": "\"X is committed to free speech within the law. Corporate-controlled 'moderation' inevitably becomes political censorship.\"",
+    "impact": {
+      "right": {
+        "x_twitter": -25,
+        "public_opinion": 15,
+        "government": 20,
+        "legacy": -10,
+        "finance": 5
+      },
+      "left": {
+        "x_twitter": 20,
+        "public_opinion": -15,
+        "government": -20,
+        "legacy": 15,
+        "finance": -5
+      }
+    }
+  },
+  {
+    "text": "Nikola Tesla's ghost criticizes your focus on Mars. 'Why not solve Earth's energy problems completely before looking to other planets?'",
+    "emojis": [
+      "👻",
+      "🌍",
+      "⚡"
+    ],
+    "leftResponse": "\"You're right that Earth's energy transition deserves more focus. I'll rebalance our priorities toward solving problems here first.\"",
+    "rightResponse": "\"Becoming multi-planetary is an insurance policy for Earth's biosphere. We must pursue both goals simultaneously for humanity's future. Plus, Mars has no fossil fuel lobbyists - it's the ultimate clean energy sandbox!\"",
+    "impact": {
+      "left": {
+        "tesla": 20,
+        "mars": -25,
+        "spacex": -15,
+        "public_opinion": 15,
+        "legacy": -10
+      },
+      "right": {
+        "tesla": -10,
+        "mars": 20,
+        "spacex": 15,
+        "public_opinion": -10,
+        "legacy": 15
+      }
+    }
+  },
+  {
+    "text": "Tesla's ghost proposes you build his theoretical 'death ray' for planetary defense against asteroids. He offers the complete designs.",
+    "emojis": [
+      "👻",
+      "☄️",
+      "🔫"
+    ],
+    "leftResponse": "\"A planetary defense system could protect Earth from extinction-level impacts! This could be humanity's insurance policy.\"",
+    "rightResponse": "\"Weapons development, even for defense, creates too many risks. We should focus on detection and deflection technologies instead. Though a giant space laser would make for epic Twitter content - 'Watch us vaporize this asteroid LIVE!'\"",
+    "impact": {
+      "left": {
+        "spacex": 15,
+        "government": -25,
+        "public_opinion": -20,
+        "legacy": -15,
+        "finance": 10
+      },
+      "right": {
+        "spacex": -10,
+        "government": 15,
+        "public_opinion": 15,
+        "legacy": 10,
+        "finance": -5
+      }
+    }
+  },
+  {
+    "text": "Tesla's ghost suggests focusing on his resonant frequency technology that could 'extract unlimited energy from the environment.'",
+    "emojis": [
+      "👻",
+      "⚡",
+      "🔄"
+    ],
+    "leftResponse": "\"Resonant energy extraction could revolutionize physics and solve humanity's energy needs forever! I'll investigate immediately.\"",
+    "rightResponse": "\"While I respect your genius, Nikola, energy extraction must obey thermodynamic laws. There's no free energy in the environment. Though if we could harness the energy of Twitter outrage, we'd power the planet for centuries!\"",
+    "impact": {
+      "left": {
+        "tesla": -20,
+        "finance": -15,
+        "public_opinion": 15,
+        "legacy": -15,
+        "government": -10
+      },
+      "right": {
+        "tesla": 15,
+        "finance": 10,
+        "public_opinion": -10,
+        "legacy": 10,
+        "government": 5
+      }
+    }
+  },
+  {
+    "text": "Alien Lord X Æ A-Xii suggests implanting Neuralink in world leaders to 'guide them toward more rational decision-making.'",
+    "emojis": [
+      "👽",
+      "🧠",
+      "👑"
+    ],
+    "leftResponse": "\"Enhanced cognitive capabilities for leaders could indeed improve governance. A fascinating proposal, my lord.\"",
+    "rightResponse": "\"Mind control, even for 'good' purposes, violates human autonomy. Neuralink must remain voluntary and ethical. Though watching politicians suddenly speak coherently would be the greatest plot twist in human history!\"",
+    "impact": {
+      "left": {
+        "neuralink": -25,
+        "government": -20,
+        "public_opinion": -25,
+        "legacy": -20,
+        "finance": 15
+      },
+      "right": {
+        "neuralink": 20,
+        "government": 15,
+        "public_opinion": 20,
+        "legacy": 15,
+        "finance": -10
+      }
+    }
+  },
+  {
+    "text": "Alien Lord X Æ A-Xii offers to share technology that would extend human lifespan to 500 years, but only for those who pass their 'worthiness test.'",
+    "emojis": [
+      "👽",
+      "⏳",
+      "🧪"
+    ],
+    "leftResponse": "\"Extended lifespans would allow our best minds to solve humanity's greatest challenges. The selection process seems necessary.\"",
+    "rightResponse": "\"Life extension should be developed for all humanity, not as a privilege for a selected few based on alien criteria.\"",
+    "impact": {
+      "left": {
+        "neuralink": 20,
+        "public_opinion": -25,
+        "government": -20,
+        "legacy": -15,
+        "finance": 15
+      },
+      "right": {
+        "neuralink": -15,
+        "public_opinion": 20,
+        "government": 15,
+        "legacy": 10,
+        "finance": -10
+      }
+    }
+  },
+  {
+    "text": "Jensen Huang proposes a debate on whether specialized AI hardware or software optimization is more important for advancing artificial intelligence.",
+    "emojis": [
+      "🤖",
+      "🖥️",
+      "🎭"
+    ],
+    "leftResponse": "\"A public discussion on AI approaches would benefit everyone! Hardware and software optimization are both crucial elements.\"",
+    "rightResponse": "\"AI advancement requires tight integration of hardware and software, not treating them as separate domains. The debate premise is flawed.\"",
+    "impact": {
+      "left": {
+        "ai_bots": -10,
+        "public_opinion": 15,
+        "x_twitter": 10,
+        "legacy": -5,
+        "finance": 5
+      },
+      "right": {
+        "ai_bots": 15,
+        "public_opinion": -10,
+        "x_twitter": -5,
+        "legacy": 10,
+        "finance": -5
+      }
+    }
+  },
+  {
+    "text": "Joe Rogan suggests you should run for president in the next election, offering his full support and platform to launch your campaign.",
+    "emojis": [
+      "🎙️",
+      "🗳️",
+      "🇺🇸"
+    ],
+    "rightResponse": "\"I can better serve humanity by focusing on my companies' missions rather than entering the political arena.\"",
+    "leftResponse": "\"President Musk's first executive order: Mars becomes the 51st state! Free Teslas for all voters! White House renamed to 'Doge House'!\"",
+    "impact": {
+      "right": {
+        "public_opinion": 20,
+        "x_twitter": -20,
+        "government": 25,
+        "tesla": 15,
+        "spacex": 15
+      },
+      "left": {
+        "public_opinion": -25,
+        "x_twitter": 25,
+        "government": -30,
+        "tesla": -20,
+        "spacex": -20
+      }
+    }
+  },
+  {
+    "text": "A tweet comparing your Mars ambitions to the plot of 'Don't Look Up' has gone viral, suggesting you're abandoning Earth's problems.",
+    "emojis": [
+      "𝕏",
+      "🪐",
+      "🎬"
+    ],
+    "rightResponse": "\"Unlike the movie, becoming multi-planetary isn't about abandoning Earth—it's an insurance policy for Earth's biosphere!\"",
+    "leftResponse": "\"Oversimplified movie comparisons trivialize the existential importance of becoming a multi-planetary species for long-term survival.\"",
+    "impact": {
+      "right": {
+        "public_opinion": 20,
+        "x_twitter": 15,
+        "mars": 10,
+        "legacy": 5,
+        "spacex": -10
+      },
+      "left": {
+        "public_opinion": -15,
+        "x_twitter": -10,
+        "mars": -5,
+        "legacy": -5,
+        "spacex": 15
+      }
+    }
+  },
+  {
+    "text": "Make all SpaceX rockets play the Star Wars theme during launch?",
+    "rightResponse": "'The Force will be with our astronauts! Disney lawyers too! May the thrust be with you, always!'",
+    "leftResponse": "'Copyright issues aside, launch communications need clarity.'",
+    "emojis": [
+      "🚀",
+      "🎵",
+      "✨"
+    ],
+    "impact": {
+      "right": {
+        "spacex": -15,
+        "public_opinion": 18,
+        "government": -12,
+        "x_twitter": 16
+      },
+      "left": {
+        "spacex": 13,
+        "public_opinion": -8,
+        "government": 14,
+        "x_twitter": -10
+      }
+    }
+  },
+  {
+    "text": "Make SpaceX rockets shaped like giant versions of childhood toys?",
+    "rightResponse": "'LEGO Falcon Heavy is go for launch! Imagine a 200-foot Rubik's Cube orbiting Earth, confusing alien astronomers for centuries!'",
+    "leftResponse": "'Aerodynamics and engineering principles should determine rocket design. Safety trumps nostalgia.'",
+    "emojis": [
+      "🚀",
+      "🧸",
+      "🧩"
+    ],
+    "impact": {
+      "right": {
+        "spacex": -20,
+        "public_opinion": 16,
+        "government": -14,
+        "x_twitter": 22
+      },
+      "left": {
+        "spacex": 15,
+        "public_opinion": -8,
+        "government": 12,
+        "x_twitter": -10
+      }
+    }
+  },
+  {
+    "text": "Create a Tesla feature that makes your car pretend to run out of battery when your in-laws visit?",
+    "rightResponse": "'Vehicle reliability should never be compromised for pranks. Family relationships are already complicated enough.'",
+    "leftResponse": "'Sorry, can't drive to that restaurant you picked! Tesla's new 'In-Law Escape Mode' activates with 100% mother-in-law detection accuracy!'",
+    "emojis": [
+      "🚗",
+      "🔋",
+      "👪"
+    ],
+    "impact": {
+      "right": {
+        "tesla": 15,
+        "public_opinion": 12,
+        "legacy": 10,
+        "x_twitter": -8
+      },
+      "left": {
+        "tesla": -22,
+        "public_opinion": -16,
+        "legacy": -14,
+        "x_twitter": 24
+      }
+    }
+  },
+  {
+    "text": "Create a SpaceX program to launch a giant space casino in orbit?",
+    "leftResponse": "'Zero-G roulette! The house always wins... in space!'",
+    "rightResponse": "'Gambling regulations exist for good reasons, even in orbit.'",
+    "emojis": [
+      "🚀",
+      "🎰",
+      "🌌"
+    ],
+    "impact": {
+      "left": {
+        "spacex": -24,
+        "finance": 18,
+        "government": -26,
+        "x_twitter": 22
+      },
+      "right": {
+        "spacex": 16,
+        "finance": -12,
+        "government": 20,
+        "x_twitter": -10
+      }
+    }
+  },
+  {
+    "text": "Make Neuralink play 'The Imperial March' whenever your mother-in-law visits?",
+    "leftResponse": "'Space is the ultimate concert venue! No noise complaints in vacuum!'",
+    "rightResponse": "'Personal relationships shouldn't be undermined by sound effects.'",
+    "emojis": [
+      "🧠",
+      "👪",
+      "🎵"
+    ],
+    "impact": {
+      "left": {
+        "neuralink": -18,
+        "public_opinion": 16,
+        "legacy": -14,
+        "x_twitter": 22
+      },
+      "right": {
+        "neuralink": 15,
+        "public_opinion": -8,
+        "legacy": 12,
+        "x_twitter": -10
+      }
+    }
+  },
+  {
+    "text": "Make SpaceX rockets release confetti during launches?",
+    "leftResponse": "'Space celebrations! Making astronomy festive!'",
+    "rightResponse": "'Orbital debris regulations prohibit non-functional particles in space.'",
+    "emojis": [
+      "🚀",
+      "🎊",
+      "🌌"
+    ],
+    "impact": {
+      "left": {
+        "spacex": -21,
+        "public_opinion": 17,
+        "government": -19,
+        "x_twitter": 23
+      },
+      "right": {
+        "spacex": 17,
+        "public_opinion": -9,
+        "government": 15,
+        "x_twitter": -11
+      }
+    }
+  }
+]

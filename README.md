@@ -14,6 +14,10 @@ Each turn presents a question card. Swiping right accepts the idea, swiping left
 4. Drag/swipe the card left or right to pick an answer. Keep the meters from maxing out or dropping to zero to survive.
 5. If you fail, hit **Try Again** or **Quit** to restart.
 
+## Question Categories
+Questions are organized into JSON files by theme (e.g. `tech.json`, `politics.json`).
+The game loads these files on demand so only the necessary categories are fetched.
+
 Screenshots below show a glimpse of the interface:
 
 ```bash
