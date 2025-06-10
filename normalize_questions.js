@@ -1,23 +1,17 @@
 const fs = require('fs');
-const vm = require('vm');
 
-const files = fs.readdirSync('.').filter(f => /^questions(\.|$)/.test(f) || /^new_questions_batch\d+\.js$/.test(f));
+// Look for question JSON files in the current directory.  Files follow the
+// pattern `questions.json` or `new_questions_batch<N>.json`.
+const files = fs
+  .readdirSync('.')
+  .filter(
+    (f) =>
+      (/^questions(\.|$)/.test(f) || /^new_questions_batch\d+\.json$/.test(f)) &&
+      f.endsWith('.json'),
+  );
 
-files.forEach(file => {
-  const content = fs.readFileSync(file, 'utf8');
-  const varMatch = content.match(/const\s+(\w+)\s*=\s*/);
-  if (!varMatch) {
-    console.error(`Variable name not found for ${file}`);
-    return;
-  }
-  const varName = varMatch[1];
-  const start = content.indexOf('[');
-  const end = content.lastIndexOf(']');
-  const arrayCode = content.slice(start, end + 1);
-  const context = {};
-  vm.createContext(context);
-  vm.runInContext(`result = ${arrayCode}`, context);
-  const arr = context.result;
+files.forEach((file) => {
+  const arr = JSON.parse(fs.readFileSync(file, 'utf8'));
   arr.forEach(q => {
     if (q && q.impact && q.impact.right && q.impact.left) {
       const sum = obj => Object.values(obj).reduce((a, b) => a + b, 0);
@@ -29,6 +23,5 @@ files.forEach(file => {
       }
     }
   });
-  const newContent = `const ${varName} = ${JSON.stringify(arr, null, 2)};\n`;
-  fs.writeFileSync(file, newContent);
+  fs.writeFileSync(file, JSON.stringify(arr, null, 2) + '\n');
 });
