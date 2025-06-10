@@ -65,6 +65,11 @@ the repository, swaps responses when the left choice carries a positive impact
 and the right choice a negative one, then writes the normalized JSON back to
 disk.
 
+## Live Demo
+
+Play it online here:
+<https://muratcangencturk.github.io/elonmusksimulator/>
+
 This project is a parody and is provided for entertainment. It is licensed under the [Apache License 2.0](LICENSE).
 
 
