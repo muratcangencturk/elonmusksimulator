@@ -1,4 +1,4 @@
-const new_questions_batch3 = [
+[
   {
     "text": "Mark Zuckerberg challenges you to a public debate on AI safety. Says Meta's approach is 'more responsible than yours.'",
     "emojis": [
@@ -1299,4 +1299,4 @@ const new_questions_batch3 = [
       }
     }
   }
-];
+]
