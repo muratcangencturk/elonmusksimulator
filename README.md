@@ -32,19 +32,4 @@ Play it online here:
 
 This project is a parody and is provided for entertainment. It is licensed under the [Apache License 2.0](LICENSE).
 
-
-## Contributing
-
-Questions or improvements are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. By participating you agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md).
-
-## Optional Analytics
-
-The game can collect anonymous usage statistics using the open source [Plausible](https://plausible.io/) platform.
-To enable tracking, edit `analytics.js` and set `ANALYTICS_DOMAIN` to your Plausible domain, for example:
-
-```javascript
-const ANALYTICS_DOMAIN = 'yourgame.example.com';
-```
-
-When configured, players will be asked for consent before the analytics script loads.
-
+See [CREDITS.md](CREDITS.md) for image attributions and notes about the origin of the question text.
