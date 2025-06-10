@@ -1,0 +1,80 @@
+[
+  {
+    "text": "Donald Trump arıyor, X'e rakip olacak yeni bir sosyal medya platformu için 'muhteşem' bir fikri olduğunu söylüyor. Bunu finanse etmeni istiyor. 'ÇOK BÜYÜK olacak!'",
+    "emojis": [
+      "📱",
+      "🤝",
+      "💰"
+    ],
+    "rightResponse": "'Başka bir platform mı? Dünya bu kadar başarıya hazır değil! Ama tamam, sosyal medyayı yeniden harika yapalım!'",
+    "leftResponse": "'Don, tüm saygımla, başka bir Twitter savaşına girmek yerine Mars'a gitmeye çalışıyorum. Pas geçiyorum.'",
+    "impact": {
+      "right": {
+        "x_twitter": -15,
+        "public_opinion": 10,
+        "finance": -20,
+        "legacy": 5,
+        "government": 5
+      },
+      "left": {
+        "x_twitter": 5,
+        "public_opinion": -5,
+        "finance": 10,
+        "legacy": -5,
+        "government": -10
+      }
+    }
+  },
+  {
+    "text": "Trump ortak bir girişim öneriyor: SpaceX roketleriyle TRUMP markalı golf toplarını Aya fırlatmak. 'En iyi golf topları, en iyi ay!'",
+    "emojis": [
+      "🚀",
+      "🌕",
+      "⛳"
+    ],
+    "rightResponse": "'Don, coşku için teşekkürler ama roketlerim bilime yönelik, golf toplarını kraterlerde kaybetmek için değil.'",
+    "leftResponse": "'Ay golfü mü? Gezegenler arası pazarlama için tam isabet! Hadi yapalım!'",
+    "impact": {
+      "right": {
+        "spacex": 10,
+        "public_opinion": -10,
+        "finance": 5,
+        "legacy": 5,
+        "mars": 5
+      },
+      "left": {
+        "spacex": -10,
+        "public_opinion": 15,
+        "finance": -10,
+        "legacy": -5,
+        "mars": -5
+      }
+    }
+  },
+  {
+    "text": "Trump, bir sonraki başkanlık kampanyası için 'güzel, güçlü' altın kaplamalı bir Cybertruck inşa etmeni istiyor. 'Elbette kurşun geçirmez olmalı.'",
+    "emojis": [
+      "🚚",
+      "🇺🇸",
+      "✨"
+    ],
+    "rightResponse": "'Altın kaplamalı, kurşun geçirmez bir Cybertruck mı? Nihai kampanya aracı! Tamamdır Bay Başkan!'",
+    "leftResponse": "'Cybertruck sağlamdır ama altın kaplama sürtünmeyi etkileyebilir. Ben siyasete karışmıyorum.'",
+    "impact": {
+      "right": {
+        "tesla": -5,
+        "public_opinion": 10,
+        "finance": -15,
+        "government": 10,
+        "legacy": -5
+      },
+      "left": {
+        "tesla": 10,
+        "public_opinion": -10,
+        "finance": 5,
+        "government": -15,
+        "legacy": 5
+      }
+    }
+  }
+]
