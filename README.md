@@ -5,8 +5,9 @@
 ## Playing the Game
 1. Clone or download this repository.
 2. Open `index.html` in a modern web browser (double click the file or serve it locally).
-3. Drag/swipe the card left or right to pick an answer. Keep the meters from maxing out or dropping to zero to survive.
-4. If you fail, hit **Try Again** or **Quit** to restart.
+3. Choose your language from the dropdown at the top.
+4. Drag/swipe the card left or right to pick an answer. Keep the meters from maxing out or dropping to zero to survive.
+5. If you fail, hit **Try Again** or **Quit** to restart.
 
 Screenshots below show a glimpse of the interface:
 
