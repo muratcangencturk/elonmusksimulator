@@ -613,9 +613,14 @@ document.getElementById('quit-button').addEventListener('click', function() {
 
 // Initialize the game when the page loads
 window.addEventListener('load', function() {
+    // Register service worker for offline support
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+    }
+
     // Combine all questions
     window.allQuestions = combineAllQuestions();
-    
+
     // Initialize the game
     initGame();
 });
