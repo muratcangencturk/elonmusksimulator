@@ -42,6 +42,20 @@ Licensed under the [Apache License 2.0](LICENSE).
 After editing any of the `*.json` question files, run the helper script to
 ensure the left and right responses are oriented correctly:
 
+## Installing as a PWA
+This project includes a web app manifest and service worker. If your browser
+supports Progressive Web Apps, you can install **Elon Musk Simulator** for an
+app-like experience:
+
+1. Serve or open `index.html` in a modern browser such as Chrome, Edge or
+   mobile browsers.
+2. Look for the **Install** or **Add to Home Screen** prompt in the address
+   bar or browser menu.
+3. Confirm the installation and the game will launch from your apps list
+   offline.
+
+Screenshots below show a glimpse of the interface:
+
 ```bash
 node normalize_questions.js
 ```
