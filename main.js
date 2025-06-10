@@ -1,3 +1,5 @@
+import { t, getLanguage, updateTexts, setLanguage, initI18n } from './translations.js';
+
 // Vital status definitions with symbols and colors
 const vitalStatuses = {
     "spacex": { symbol: "🚀", label: "SpaceX", color: "#cc0000", value: 50 },
@@ -181,7 +183,7 @@ async function createCard() {
     // Top instruction
     const topInstruction = document.createElement('p');
     topInstruction.className = 'swipe-instruction';
-    topInstruction.textContent = '← swipe left or right to answer →';
+    topInstruction.textContent = t('swipeInstruction');
 
     // Emoji container
     const emojiDiv = document.createElement('div');
@@ -209,7 +211,7 @@ async function createCard() {
     // Bottom instruction
     const bottomInstruction = document.createElement('p');
     bottomInstruction.className = 'swipe-instruction';
-    bottomInstruction.textContent = '← swipe left or right to answer →';
+    bottomInstruction.textContent = t('swipeInstruction');
 
     // Append all parts to card
     card.appendChild(topInstruction);
@@ -596,9 +598,9 @@ function addInnovationImpactToQuestions(questionsArray) {
 // Combine all questions
 // Question categories loaded lazily from JSON files
 const categories = {
-    tech: { file: 'tech.json', questions: [], loaded: false },
-    politics: { file: 'politics.json', questions: [], loaded: false },
-    misc: { file: 'misc.json', questions: [], loaded: false }
+    tech: { file: { en: 'tech.json', tr: 'tech_tr.json' }, questions: [], loaded: false },
+    politics: { file: { en: 'politics.json', tr: 'politics_tr.json' }, questions: [], loaded: false },
+    misc: { file: { en: 'misc.json', tr: 'misc_tr.json' }, questions: [], loaded: false }
 };
 
 // Load a category's questions if not already loaded
@@ -606,14 +608,14 @@ async function loadCategory(name) {
     const cat = categories[name];
     if (!cat || cat.loaded) return;
     try {
-        const response = await fetch(cat.file);
+        const response = await fetch(cat.file[getLanguage()]);
         const data = await response.json();
         cat.questions = addInnovationImpactToQuestions(data);
         cat.loaded = true;
     } catch (err) {
-        console.warn(`Fetch failed for ${cat.file}, attempting module import`, err);
+        console.warn(`Fetch failed for ${cat.file[getLanguage()]}, attempting module import`, err);
         try {
-            const module = await import(/* webpackIgnore: true */ `./${cat.file}`, { with: { type: 'json' } });
+            const module = await import(/* webpackIgnore: true */ `./${cat.file[getLanguage()]}`, { with: { type: 'json' } });
             cat.questions = addInnovationImpactToQuestions(module.default);
             cat.loaded = true;
         } catch (importErr) {
@@ -686,5 +688,27 @@ document.getElementById('quit-button').addEventListener('click', function() {
 // Initialize the game when the page loads
 
 window.addEventListener('load', function() {
+    initI18n();
+    initGame();
+});
+
+// Language toggle buttons
+document.getElementById('btn-en').addEventListener('click', () => {
+    setLanguage('en');
+    Object.values(categories).forEach(cat => {
+        cat.loaded = false;
+        cat.questions = [];
+    });
+    shuffledQuestions = [];
+    initGame();
+});
+
+document.getElementById('btn-tr').addEventListener('click', () => {
+    setLanguage('tr');
+    Object.values(categories).forEach(cat => {
+        cat.loaded = false;
+        cat.questions = [];
+    });
+    shuffledQuestions = [];
     initGame();
 });

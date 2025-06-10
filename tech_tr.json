@@ -1,0 +1,80 @@
+[
+  {
+    "text": "Erdoğan, Türkiye ile SpaceX arasında ortak bir uzay programı öneriyor ve ilk Türk astronotu yörüngeye yerleştirmeyi hedefliyor. Kısmi finansman sunuyor.",
+    "emojis": [
+      "🚀",
+      "🇹🇷",
+      "👨‍🚀"
+    ],
+    "rightResponse": "\"Bir Türk astronot programı mı? Uzay erişimini küresel olarak genişletmek insanlığın tam da ihtiyacı olan şey!\"",
+    "leftResponse": "\"Uzay programları kapsamlı altyapı ve eğitim gerektirir. Belki önce uydu fırlatmalarıyla başlamak gerek.\"",
+    "impact": {
+      "right": {
+        "spacex": 10,
+        "finance": -5,
+        "government": 15,
+        "public_opinion": 10,
+        "legacy": 5
+      },
+      "left": {
+        "spacex": -5,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": -10,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "Erdoğan, Neuralink teknolojisini Batılı ülkelerden önce Türk hastanelerinde uygulamak istiyor. Tüm onayları hızlandırmayı teklif ediyor.",
+    "emojis": [
+      "🧠",
+      "🏥",
+      "🇹🇷"
+    ],
+    "rightResponse": "\"Hızlandırılmış tıbbi onaylar mı? Bu başka yerlere göre yıllar önce binlerce hastaya yardım edebilir!\"",
+    "leftResponse": "\"Tıbbi teknoloji konumu ne olursa olsun titiz testler gerektirir. Güvenlik protokollerinden taviz veremeyiz.\"",
+    "impact": {
+      "right": {
+        "neuralink": 15,
+        "finance": 10,
+        "government": 10,
+        "public_opinion": -15,
+        "legacy": -10
+      },
+      "left": {
+        "neuralink": -5,
+        "finance": -10,
+        "government": -10,
+        "public_opinion": 15,
+        "legacy": 10
+      }
+    }
+  },
+  {
+    "text": "Erdoğan, Orta Doğu pazarı için otonom araç teknolojisine odaklanan İstanbul'da ortak bir yapay zeka araştırma merkezi kurmak istiyor.",
+    "emojis": [
+      "🤖",
+      "🚗",
+      "🏙️"
+    ],
+    "rightResponse": "\"İstanbul'da Doğu ile Batı'yı birleştiren bir yapay zeka merkezi mi? Bölgeye özel otonom çözümler geliştirmek için mükemmel!\"",
+    "leftResponse": "\"Yapay zeka geliştirmemiz tutarlılık için merkezileştirildi. Bölgesel uyarlamalar çekirdek teknoloji mükemmelleştikten sonra gelir.\"",
+    "impact": {
+      "right": {
+        "ai_bots": 15,
+        "tesla": 10,
+        "finance": -10,
+        "government": 10,
+        "legacy": 5
+      },
+      "left": {
+        "ai_bots": -5,
+        "tesla": -5,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": -5
+      }
+    }
+  }
+]
