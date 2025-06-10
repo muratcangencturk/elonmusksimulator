@@ -18,8 +18,12 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>ELON MUSK SIMULATOR</h1>
-            <p>This is Elon Musk!</p>
+            <h1 id="title">ELON MUSK SIMULATOR</h1>
+            <p id="subtitle">This is Elon Musk!</p>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
         </div>
         
         <div class="vitals" id="vitals">
@@ -35,8 +39,8 @@
     </div>
 
     <div class="game-over" id="game-over">
-        <h2>Game Over: Elon has lost interest in you...</h2>
-        <p>Your decisions have led to a catastrophic failure in one of Elon's ventures.</p>
+        <h2 id="game-over-title">Game Over: Elon has lost interest in you...</h2>
+        <p id="game-over-message">Your decisions have led to a catastrophic failure in one of Elon's ventures.</p>
         <div class="control-buttons">
             <button class="control-button restart-button" id="restart-button" aria-label="Restart game">Try Again</button>
             <button class="control-button quit-button" id="quit-button" aria-label="Quit game">Quit</button>
@@ -49,8 +53,8 @@
     <script src="new_questions_batch3.js"></script>
     <script src="new_questions_batch4.js"></script>
     <script src="new_questions_batch5.js"></script>
-    <script src="analytics.js" defer></script>
-
+    <script src="translations.js"></script>
+    <script src="i18n.js"></script>
     <script src="main.js" defer></script>
 </body>
 </html>
