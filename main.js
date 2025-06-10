@@ -176,6 +176,7 @@ function createCard() {
     const card = document.createElement('div');
     card.className = 'card next-card-enter';
     card.id = 'current-card';
+    card.tabIndex = 0; // allow keyboard focus
     
     // Top instruction
     const topInstruction = document.createElement('p');
