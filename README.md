@@ -14,3 +14,14 @@ Screenshots below show a glimpse of the interface:
 ![Elon angry](elon_musk_angry.png)
 
 This project is a parody and is provided for entertainment. It is licensed under the [Apache License 2.0](LICENSE).
+
+## Optional Analytics
+
+The game can collect anonymous usage statistics using the open source [Plausible](https://plausible.io/) platform.
+To enable tracking, edit `analytics.js` and set `ANALYTICS_DOMAIN` to your Plausible domain, for example:
+
+```javascript
+const ANALYTICS_DOMAIN = 'yourgame.example.com';
+```
+
+When configured, players will be asked for consent before the analytics script loads.
