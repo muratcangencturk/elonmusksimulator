@@ -13,4 +13,18 @@ Screenshots below show a glimpse of the interface:
 ![Elon happy](elon_musk_happy.png)
 ![Elon angry](elon_musk_angry.png)
 
+## Normalizing Questions
+
+After editing any of the `*.json` question files, run the helper script to
+ensure the left and right responses are oriented correctly:
+
+```bash
+node normalize_questions.js
+```
+
+The script scans `questions.json` and all `new_questions_batch*.json` files in
+the repository, swaps responses when the left choice carries a positive impact
+and the right choice a negative one, then writes the normalized JSON back to
+disk.
+
 This project is a parody and is provided for entertainment. It is licensed under the [Apache License 2.0](LICENSE).
