@@ -130,7 +130,7 @@ function showGameOver() {
 }
 
 // Create a card with the current question
-function createCard() {
+async function createCard() {
     // Prevent multiple card creations
     if (isCardCreating) {
         debugLog("Card creation already in progress, skipping");
@@ -145,9 +145,9 @@ function createCard() {
     
     // Reset if we've gone through all questions
     if (currentQuestionIndex >= shuffledQuestions.length) {
-        debugLog("Reached end of questions, reshuffling");
-        shuffledQuestions = shuffleArray([...allQuestions]);
-        currentQuestionIndex = 0;
+        debugLog("Reached end of questions, loading more if available");
+        shuffledQuestions = [];
+        await ensureQuestionsAvailable();
     }
     
     // Store the current question for overlay display
@@ -452,8 +452,8 @@ function completeSwipe(card, isRight) {
         currentQuestionIndex++;
         
         // Create a new card after the current one is gone
-        setTimeout(() => {
-            createCard();
+        setTimeout(async () => {
+            await createCard();
             swipeInProgress = false;
             isAnimating = false;
         }, 300);
@@ -549,31 +549,46 @@ function addInnovationImpactToQuestions(questionsArray) {
 }
 
 // Combine all questions
-function combineAllQuestions() {
-    // Add innovation impact to existing questions
-    const enhancedOriginalQuestions = addInnovationImpactToQuestions(questions);
-    const enhancedBatch1 = addInnovationImpactToQuestions(new_questions_batch1);
-    const enhancedBatch2 = addInnovationImpactToQuestions(new_questions_batch2);
-    const enhancedBatch3 = addInnovationImpactToQuestions(new_questions_batch3);
-    const enhancedBatch4 = addInnovationImpactToQuestions(new_questions_batch4);
-    const enhancedBatch5 = addInnovationImpactToQuestions(new_questions_batch5);
-    
-    // Combine all question sets
-    const allQuestions = [
-        ...enhancedOriginalQuestions,
-        ...enhancedBatch1,
-        ...enhancedBatch2,
-        ...enhancedBatch3,
-        ...enhancedBatch4,
-        ...enhancedBatch5
-    ];
-    
-    console.log(`Combined ${allQuestions.length} questions from all sources`);
-    return allQuestions;
+// Question categories loaded lazily from JSON files
+const categories = {
+    tech: { file: 'tech.json', questions: [], loaded: false },
+    politics: { file: 'politics.json', questions: [], loaded: false },
+    misc: { file: 'misc.json', questions: [], loaded: false }
+};
+
+// Load a category's questions if not already loaded
+async function loadCategory(name) {
+    const cat = categories[name];
+    if (!cat || cat.loaded) return;
+    const response = await fetch(cat.file);
+    const data = await response.json();
+    cat.questions = addInnovationImpactToQuestions(data);
+    cat.loaded = true;
+}
+
+// Combine questions from all loaded categories
+function getLoadedQuestions() {
+    let combined = [];
+    Object.values(categories).forEach(cat => {
+        if (cat.loaded) combined = combined.concat(cat.questions);
+    });
+    return combined;
+}
+
+// Ensure at least one category is loaded and questions are available
+async function ensureQuestionsAvailable() {
+    if (shuffledQuestions.length === 0) {
+        const unloaded = Object.keys(categories).filter(k => !categories[k].loaded);
+        if (unloaded.length > 0) {
+            await loadCategory(unloaded[0]);
+        }
+        shuffledQuestions = shuffleArray(getLoadedQuestions());
+        currentQuestionIndex = 0;
+    }
 }
 
 // Initialize the game
-function initGame() {
+async function initGame() {
     // Reset game state
     isGameOver = false;
     currentQuestionIndex = 0;
@@ -586,9 +601,8 @@ function initGame() {
     // Create vital status elements
     createVitalElements();
     
-    // Combine and shuffle all questions
-    const allQuestions = combineAllQuestions();
-    shuffledQuestions = shuffleArray([...allQuestions]);
+    // Ensure at least one category of questions is loaded
+    await ensureQuestionsAvailable();
     
     console.log(`Game initialized with ${shuffledQuestions.length} questions`);
     
@@ -596,7 +610,7 @@ function initGame() {
     document.getElementById('game-over').classList.remove('show');
     
     // Create the first card
-    createCard();
+    await createCard();
 }
 
 // Set up restart button
@@ -613,9 +627,5 @@ document.getElementById('quit-button').addEventListener('click', function() {
 
 // Initialize the game when the page loads
 window.addEventListener('load', function() {
-    // Combine all questions
-    window.allQuestions = combineAllQuestions();
-    
-    // Initialize the game
     initGame();
 });
