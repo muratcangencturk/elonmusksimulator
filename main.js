@@ -605,10 +605,22 @@ const categories = {
 async function loadCategory(name) {
     const cat = categories[name];
     if (!cat || cat.loaded) return;
-    const response = await fetch(cat.file);
-    const data = await response.json();
-    cat.questions = addInnovationImpactToQuestions(data);
-    cat.loaded = true;
+    try {
+        const response = await fetch(cat.file);
+        const data = await response.json();
+        cat.questions = addInnovationImpactToQuestions(data);
+        cat.loaded = true;
+    } catch (err) {
+        console.warn(`Fetch failed for ${cat.file}, attempting module import`, err);
+        try {
+            const module = await import(/* webpackIgnore: true */ `./${cat.file}`, { with: { type: 'json' } });
+            cat.questions = addInnovationImpactToQuestions(module.default);
+            cat.loaded = true;
+        } catch (importErr) {
+            console.error('Failed to load questions:', importErr);
+            cat.questions = [];
+        }
+    }
 }
 
 // Combine questions from all loaded categories
