@@ -348,10 +348,10 @@ body {
 }
 
 .language-toggle {
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 10px;
-    z-index: 10;
+    z-index: 100;
 }
 
 .language-toggle button {
@@ -362,6 +362,7 @@ body {
     background: #fff;
     color: #000;
     cursor: pointer;
+    font-size: 0.8rem;
 }
 
 .language-toggle button:focus {
