@@ -13,4 +13,9 @@ Screenshots below show a glimpse of the interface:
 ![Elon happy](elon_musk_happy.png)
 ![Elon angry](elon_musk_angry.png)
 
+## Live Demo
+
+Play it online here:
+<https://muratcangencturk.github.io/elonmusksimulator/>
+
 This project is a parody and is provided for entertainment. It is licensed under the [Apache License 2.0](LICENSE).
