@@ -1,4 +1,4 @@
-const new_questions_batch5 = [
+[
   {
     "text": "Blizzard offers you early access to Diablo 4's secret cow level if you'll tweet that it's 'better than Elden Ring' from your official account.",
     "emojis": [
@@ -1299,4 +1299,4 @@ const new_questions_batch5 = [
       }
     }
   }
-];
+]
