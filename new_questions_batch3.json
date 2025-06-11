@@ -6,8 +6,8 @@
       "🎭",
       "⚔️"
     ],
-    "rightResponse": "\"A public AI debate with Zuck? Let's settle this in the marketplace of ideas! I'll bring the flamethrower, he can bring his booster seat and sunscreen for when he gets BURNED!\"",
-    "leftResponse": "\"AI safety isn't a spectacle for debate. I prefer to let our research and safety protocols speak for themselves.\"",
+    "rightResponse": "'Heck yeah! \"A public AI debate with Zuck? Let's settle this in the marketplace of ideas! I'll bring the flamethrower, he can bring his booster seat and sunscreen for when he gets BURNED!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"AI safety isn't a spectacle for debate. I prefer to let our research and safety protocols speak for themselves.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": -10,
@@ -32,8 +32,8 @@
       "💻",
       "🏆"
     ],
-    "rightResponse": "\"Safety claims require peer-reviewed evidence. Neuralink follows rigorous medical device standards, not PR timelines.\"",
-    "leftResponse": "\"Competition drives innovation! Let's see whose BCI can help more people faster! May the best brain chip win - though I bet his just makes you compulsively like photos of salads!\"",
+    "rightResponse": "'Heck yeah! \"Safety claims require peer-reviewed evidence. Neuralink follows rigorous medical device standards, not PR timelines.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Competition drives innovation! Let's see whose BCI can help more people faster! May the best brain chip win - though I bet his just makes you compulsively like photos of salads!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": 15,
@@ -58,8 +58,8 @@
       "𝕏",
       "🤝"
     ],
-    "rightResponse": "\"$75 billion? That's a generous offer, but X isn't just a business—it's a global town square that must remain independent. Besides, I'd rather set that money on fire while livestreaming it than let you turn X into Facebook 2.0!\"",
-    "leftResponse": "\"X is not for sale at any price. Its mission as a free speech platform is too important to compromise.\"",
+    "rightResponse": "'Heck yeah! \"$75 billion? That's a generous offer, but X isn't just a business—it's a global town square that must remain independent. Besides, I'd rather set that money on fire while livestreaming it than let you turn X into Facebook 2.0!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"X is not for sale at any price. Its mission as a free speech platform is too important to compromise.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "x_twitter": -15,
@@ -84,8 +84,8 @@
       "⚡",
       "💵"
     ],
-    "rightResponse": "\"Welcome to the EV revolution, Mark! The more companies pushing electric vehicles, the better for humanity! Can't wait to see the car that automatically drives you to places that harvest your personal data!\"",
-    "leftResponse": "\"Building cars at scale requires manufacturing expertise that takes decades to develop. Good luck with that.\"",
+    "rightResponse": "'Heck yeah! \"Welcome to the EV revolution, Mark! The more companies pushing electric vehicles, the better for humanity! Can't wait to see the car that automatically drives you to places that harvest your personal data!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Building cars at scale requires manufacturing expertise that takes decades to develop. Good luck with that.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": -20,
@@ -110,8 +110,8 @@
       "👥",
       "🪐"
     ],
-    "rightResponse": "\"Mars communications infrastructure will be built for reliability and scientific needs, not social media priorities.\"",
-    "leftResponse": "\"Interplanetary social media? A fascinating collaboration opportunity! Let's connect humanity across planets! First Martian selfie hashtag: #DustStormChic!\"",
+    "rightResponse": "'Heck yeah! \"Mars communications infrastructure will be built for reliability and scientific needs, not social media priorities.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Interplanetary social media? A fascinating collaboration opportunity! Let's connect humanity across planets! First Martian selfie hashtag: #DustStormChic!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 15,
@@ -136,8 +136,8 @@
       "🏆",
       "💪"
     ],
-    "rightResponse": "\"Challenge accepted! Physics and engineering taught me about leverage and momentum too. Let's make this legendary! I'll bring the flamethrower, you bring your robot exoskeleton - may the least human win!\"",
-    "leftResponse": "\"I prefer to compete through innovation and market success, not physical combat. There are better ways to raise money for charity.\"",
+    "rightResponse": "'Heck yeah! \"Challenge accepted! Physics and engineering taught me about leverage and momentum too. Let's make this legendary! I'll bring the flamethrower, you bring your robot exoskeleton - may the least human win!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"I prefer to compete through innovation and market success, not physical combat. There are better ways to raise money for charity.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "public_opinion": 20,
@@ -162,8 +162,8 @@
       "🪐",
       "🏙️"
     ],
-    "rightResponse": "\"VR Mars is impressive, but nothing compares to the real challenge of becoming multi-planetary! Though in your metaverse, the Martian dust probably sells your location data to advertisers!\"",
-    "leftResponse": "\"Simulation is not colonization. Real Mars habitation solves existential risk problems that VR simply cannot address.\"",
+    "rightResponse": "'Heck yeah! \"VR Mars is impressive, but nothing compares to the real challenge of becoming multi-planetary! Though in your metaverse, the Martian dust probably sells your location data to advertisers!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Simulation is not colonization. Real Mars habitation solves existential risk problems that VR simply cannot address.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": -10,
@@ -188,8 +188,8 @@
       "💰",
       "🏭"
     ],
-    "rightResponse": "\"Building useful humanoid robots requires vertical integration from AI to actuators. It's not just another software project.\"",
-    "leftResponse": "\"The more companies working on humanoid robots, the faster we'll solve the labor shortage! Welcome to the revolution! Can't wait to see robots that poke each other and ask to be friends while harvesting your personal data!\"",
+    "rightResponse": "'Heck yeah! \"Building useful humanoid robots requires vertical integration from AI to actuators. It's not just another software project.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"The more companies working on humanoid robots, the faster we'll solve the labor shortage! Welcome to the revolution! Can't wait to see robots that poke each other and ask to be friends while harvesting your personal data!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": 10,
@@ -214,8 +214,8 @@
       "🥽",
       "🎮"
     ],
-    "rightResponse": "\"Drivers need to remain alert even with Autopilot. Adding immersive VR creates dangerous driver distraction.\"",
-    "leftResponse": "\"VR entertainment in autonomous vehicles? An interesting way to make commuting more productive and enjoyable! Just imagine crashing in the real world while you're busy losing in the virtual one - two failures for the price of one!\"",
+    "rightResponse": "'Heck yeah! \"Drivers need to remain alert even with Autopilot. Adding immersive VR creates dangerous driver distraction.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"VR entertainment in autonomous vehicles? An interesting way to make commuting more productive and enjoyable! Just imagine crashing in the real world while you're busy losing in the virtual one - two failures for the price of one!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -240,8 +240,8 @@
       "🪐",
       "🔮"
     ],
-    "rightResponse": "\"Virtual worlds don't protect humanity from extinction-level events. Only becoming multi-planetary can do that.\"",
-    "leftResponse": "\"Digital and physical expansion can coexist! Both extend human consciousness in different but valuable ways. Though I'd rather face real Martian dust storms than spend eternity as a legless cartoon in your digital playground!\"",
+    "rightResponse": "'Heck yeah! \"Virtual worlds don't protect humanity from extinction-level events. Only becoming multi-planetary can do that.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Digital and physical expansion can coexist! Both extend human consciousness in different but valuable ways. Though I'd rather face real Martian dust storms than spend eternity as a legless cartoon in your digital playground!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": 20,
@@ -266,8 +266,8 @@
       "💻",
       "🔄"
     ],
-    "rightResponse": "\"Neural interfaces require hardware expertise and surgical precision that software companies typically lack.\"",
-    "leftResponse": "\"Competition in neural interfaces will accelerate progress! May the best technology help humanity the most! Though I bet his chip just makes you involuntarily write poetry about how great ChatGPT is!\"",
+    "rightResponse": "'Heck yeah! \"Neural interfaces require hardware expertise and surgical precision that software companies typically lack.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Competition in neural interfaces will accelerate progress! May the best technology help humanity the most! Though I bet his chip just makes you involuntarily write poetry about how great ChatGPT is!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": 15,
@@ -292,8 +292,8 @@
       "🚗",
       "🧠"
     ],
-    "rightResponse": "\"General language models lack the specialized perception training and hardware integration needed for safe driving.\"",
-    "leftResponse": "\"If GPT-5 can safely drive cars, that's a win for humanity! Different approaches can coexist and serve different needs! Though I'd love to see a car that hallucinates stop signs and apologizes profusely for misunderstanding your destination!\"",
+    "rightResponse": "'Heck yeah! \"General language models lack the specialized perception training and hardware integration needed for safe driving.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"If GPT-5 can safely drive cars, that's a win for humanity! Different approaches can coexist and serve different needs! Though I'd love to see a car that hallucinates stop signs and apologizes profusely for misunderstanding your destination!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -318,8 +318,8 @@
       "🚗",
       "🤖"
     ],
-    "rightResponse": "\"Tesla's vertical integration of custom AI hardware and software is core to our self-driving approach. We'll continue our path.\"",
-    "leftResponse": "\"Combining our AI expertise could create fascinating synergies! Let's explore the possibilities and create super-intelligent cars together! Your cars will write poetry while mine will colonize Mars - the ultimate AI collab!\"",
+    "rightResponse": "'Heck yeah! \"Tesla's vertical integration of custom AI hardware and software is core to our self-driving approach. We'll continue our path.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Combining our AI expertise could create fascinating synergies! Let's explore the possibilities and create super-intelligent cars together! Your cars will write poetry while mine will colonize Mars - the ultimate AI collab!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -344,8 +344,8 @@
       "🤖",
       "💬"
     ],
-    "rightResponse": "\"AI-moderated social media risks creating filter bubbles and lacks the authentic human discourse X provides.\"",
-    "leftResponse": "\"More competition in social media is healthy! Different platforms can serve different communication needs and AI memes will be epic! Can't wait to see a platform where every post is politely rewritten to sound like a Victorian novel!\"",
+    "rightResponse": "'Heck yeah! \"AI-moderated social media risks creating filter bubbles and lacks the authentic human discourse X provides.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"More competition in social media is healthy! Different platforms can serve different communication needs and AI memes will be epic! Can't wait to see a platform where every post is politely rewritten to sound like a Victorian novel!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "x_twitter": 20,
@@ -370,8 +370,8 @@
       "🪐",
       "🌱"
     ],
-    "rightResponse": "\"Terraforming requires physical engineering and chemistry, not just AI. The laws of physics don't bend to algorithms.\"",
-    "leftResponse": "\"AI-optimized terraforming? Fascinating approach! Let's race to see who can turn Mars green first - may the best tech win! Though I bet his AI will just create a realistic simulation of plants while mine actually grows potatoes!\"",
+    "rightResponse": "'Heck yeah! \"Terraforming requires physical engineering and chemistry, not just AI. The laws of physics don't bend to algorithms.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"AI-optimized terraforming? Fascinating approach! Let's race to see who can turn Mars green first - may the best tech win! Though I bet his AI will just create a realistic simulation of plants while mine actually grows potatoes!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": 15,
@@ -396,8 +396,8 @@
       "🧠",
       "🪐"
     ],
-    "rightResponse": "\"Digital consciousness remains theoretical, while planetary extinction risks are real. Mars colonization is essential insurance.\"",
-    "leftResponse": "\"Digital and physical expansion represent different paths for humanity's future—both worth exploring! Maybe we'll upload our brains AND colonize Mars!\"",
+    "rightResponse": "'Heck yeah! \"Digital consciousness remains theoretical, while planetary extinction risks are real. Mars colonization is essential insurance.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Digital and physical expansion represent different paths for humanity's future—both worth exploring! Maybe we'll upload our brains AND colonize Mars!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": 20,
@@ -422,8 +422,8 @@
       "⚠️",
       "🎭"
     ],
-    "rightResponse": "\"AI safety isn't advanced through public debates and soundbites, but through rigorous research and careful implementation.\"",
-    "leftResponse": "\"A public discussion on AI safety approaches would benefit everyone! Let's compare notes transparently and livestream it on X for maximum chaos!\"",
+    "rightResponse": "'Heck yeah! \"AI safety isn't advanced through public debates and soundbites, but through rigorous research and careful implementation.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"A public discussion on AI safety approaches would benefit everyone! Let's compare notes transparently and livestream it on X for maximum chaos!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": 15,
@@ -448,8 +448,8 @@
       "🦾",
       "⚖️"
     ],
-    "rightResponse": "\"Building useful humanoid robots requires manufacturing expertise and vertical integration that software companies typically lack.\"",
-    "leftResponse": "\"More companies working on humanoid robots means faster progress! The robot revolution needs many approaches - robot dance-off contest soon?\"",
+    "rightResponse": "'Heck yeah! \"Building useful humanoid robots requires manufacturing expertise and vertical integration that software companies typically lack.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"More companies working on humanoid robots means faster progress! The robot revolution needs many approaches - robot dance-off contest soon?\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": 15,
@@ -474,8 +474,8 @@
       "🌐",
       "💰"
     ],
-    "rightResponse": "\"Satellite internet requires aerospace engineering expertise and launch capabilities that software companies typically lack.\"",
-    "leftResponse": "\"More competition in satellite internet will help connect the unconnected! Space race 2.0 - may the best satellites win!\"",
+    "rightResponse": "'Heck yeah! \"Satellite internet requires aerospace engineering expertise and launch capabilities that software companies typically lack.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"More competition in satellite internet will help connect the unconnected! Space race 2.0 - may the best satellites win!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 15,
@@ -500,8 +500,8 @@
       "🚗",
       "🤖"
     ],
-    "rightResponse": "\"Tesla's AI strategy is core to our mission and competitive advantage. We're not looking for external direction.\"",
-    "leftResponse": "\"Fresh investment and AI expertise could bring interesting perspectives! Let's create the wildest AI-powered cars together!\"",
+    "rightResponse": "'Heck yeah! \"Tesla's AI strategy is core to our mission and competitive advantage. We're not looking for external direction.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Fresh investment and AI expertise could bring interesting perspectives! Let's create the wildest AI-powered cars together!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 20,
@@ -526,8 +526,8 @@
       "🪐",
       "💰"
     ],
-    "rightResponse": "\"Mars missions require years of demonstrated orbital capability and life support systems. Promises are easy, execution is hard.\"",
-    "leftResponse": "\"Competition in space is fantastic for humanity! May the best rocket company help us become multi-planetary! Race you to Mars, Jeff!\"",
+    "rightResponse": "'Heck yeah! \"Mars missions require years of demonstrated orbital capability and life support systems. Promises are easy, execution is hard.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Competition in space is fantastic for humanity! May the best rocket company help us become multi-planetary! Race you to Mars, Jeff!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 15,
@@ -552,8 +552,8 @@
       "🚀",
       "🤝"
     ],
-    "rightResponse": "\"SpaceX is not for sale at any price. Our mission to Mars is too important to compromise with different priorities.\"",
-    "leftResponse": "\"A fascinating proposal! Combining resources could accelerate humanity's multi-planetary future! SpaceX-Origin sounds catchy!\"",
+    "rightResponse": "'Heck yeah! \"SpaceX is not for sale at any price. Our mission to Mars is too important to compromise with different priorities.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"A fascinating proposal! Combining resources could accelerate humanity's multi-planetary future! SpaceX-Origin sounds catchy!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 20,
@@ -578,8 +578,8 @@
       "⚡",
       "📦"
     ],
-    "rightResponse": "\"Tesla's vertical integration from batteries to motors gives fundamental advantages that are hard for newcomers to match.\"",
-    "leftResponse": "\"More companies electrifying transportation is a win for sustainability! The EV revolution needs all of us - even if our trucks are cooler!\"",
+    "rightResponse": "'Heck yeah! \"Tesla's vertical integration from batteries to motors gives fundamental advantages that are hard for newcomers to match.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"More companies electrifying transportation is a win for sustainability! The EV revolution needs all of us - even if our trucks are cooler!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -604,8 +604,8 @@
       "🛒",
       "💭"
     ],
-    "rightResponse": "\"Neuralink is focused on medical applications and human augmentation, not consumerism and impulse purchasing.\"",
-    "leftResponse": "\"Brain-computer interfaces for commerce? Think it, buy it, receive it! The ultimate shopping experience of the future!\"",
+    "rightResponse": "'Heck yeah! \"Neuralink is focused on medical applications and human augmentation, not consumerism and impulse purchasing.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Brain-computer interfaces for commerce? Think it, buy it, receive it! The ultimate shopping experience of the future!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": 15,
@@ -630,8 +630,8 @@
       "🌕",
       "🏆"
     ],
-    "rightResponse": "\"Starship's fully reusable architecture and payload capacity offer fundamental advantages that smaller landers cannot match.\"",
-    "leftResponse": "\"Multiple lunar lander options benefit the entire space industry! Let's have a moon race like the 60s, but with memes this time!\"",
+    "rightResponse": "'Heck yeah! \"Starship's fully reusable architecture and payload capacity offer fundamental advantages that smaller landers cannot match.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Multiple lunar lander options benefit the entire space industry! Let's have a moon race like the 60s, but with memes this time!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 15,
@@ -656,8 +656,8 @@
       "📱",
       "🛒"
     ],
-    "rightResponse": "\"Corporate-controlled, advertiser-optimized platforms inevitably compromise on free speech. X remains independent for a reason.\"",
-    "leftResponse": "\"More competition in social media is healthy for the ecosystem! Different platforms can serve different needs - may the best memes win!\"",
+    "rightResponse": "'Heck yeah! \"Corporate-controlled, advertiser-optimized platforms inevitably compromise on free speech. X remains independent for a reason.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"More competition in social media is healthy for the ecosystem! Different platforms can serve different needs - may the best memes win!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "x_twitter": 20,
@@ -682,8 +682,8 @@
       "🗣️",
       "🛒"
     ],
-    "rightResponse": "\"Tesla's ecosystem is designed for seamless integration and privacy. Third-party shopping services don't align with our vision.\"",
-    "leftResponse": "\"Integrating more services into Tesla vehicles could enhance the user experience! Imagine ordering flamethrowers by voice while driving!\"",
+    "rightResponse": "'Heck yeah! \"Tesla's ecosystem is designed for seamless integration and privacy. Third-party shopping services don't align with our vision.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Integrating more services into Tesla vehicles could enhance the user experience! Imagine ordering flamethrowers by voice while driving!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -708,8 +708,8 @@
       "📦",
       "🚀"
     ],
-    "rightResponse": "\"Different companies solve different problems! Both approaches have tremendous value for humanity's progress - though rockets to Mars are obviously cooler than cardboard boxes!\"",
-    "leftResponse": "\"Comparing contributions isn't productive. History will judge which approaches truly advanced civilization.\"",
+    "rightResponse": "'Heck yeah! \"Different companies solve different problems! Both approaches have tremendous value for humanity's progress - though rockets to Mars are obviously cooler than cardboard boxes!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Comparing contributions isn't productive. History will judge which approaches truly advanced civilization.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "public_opinion": 15,
@@ -734,8 +734,8 @@
       "🗣️",
       "🛒"
     ],
-    "rightResponse": "\"E-commerce optimized AI will inevitably push consumers toward purchases rather than providing neutral assistance.\"",
-    "leftResponse": "\"More AI assistants mean more consumer choice! Competition drives innovation in this space! Let's see whose AI can tell better jokes!\"",
+    "rightResponse": "'Heck yeah! \"E-commerce optimized AI will inevitably push consumers toward purchases rather than providing neutral assistance.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"More AI assistants mean more consumer choice! Competition drives innovation in this space! Let's see whose AI can tell better jokes!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": 10,
@@ -760,8 +760,8 @@
       "📦",
       "🏭"
     ],
-    "rightResponse": "\"General-purpose humanoid robots require vertical integration from AI to actuators. Warehouse-specific robots are a different challenge.\"",
-    "leftResponse": "\"More companies working on humanoid robots will accelerate progress! Let's have a robot dance battle to see whose bots have better moves!\"",
+    "rightResponse": "'Heck yeah! \"General-purpose humanoid robots require vertical integration from AI to actuators. Warehouse-specific robots are a different challenge.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"More companies working on humanoid robots will accelerate progress! Let's have a robot dance battle to see whose bots have better moves!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": 15,
@@ -786,8 +786,8 @@
       "🪐",
       "⚠️"
     ],
-    "rightResponse": "\"You make a fair point, Bill. Let's race to see who can solve more problems - you on Earth, me on Mars! Double the solutions, double the fun!\"",
-    "leftResponse": "\"Becoming multi-planetary isn't about 'escaping' - it's about extending consciousness and creating a backup for Earth's biosphere.\"",
+    "rightResponse": "'Heck yeah! \"You make a fair point, Bill. Let's race to see who can solve more problems - you on Earth, me on Mars! Double the solutions, double the fun!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Becoming multi-planetary isn't about 'escaping' - it's about extending consciousness and creating a backup for Earth's biosphere.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": -15,
@@ -812,8 +812,8 @@
       "⚖️",
       "💻"
     ],
-    "rightResponse": "\"Different approaches to AI alignment are valuable! Let's have our AIs debate each other live on X - winner gets to name a Mars crater!\"",
-    "leftResponse": "\"'Aligned with human values' often means aligned with specific corporate or political values. True AI should maximize user agency.\"",
+    "rightResponse": "'Heck yeah! \"Different approaches to AI alignment are valuable! Let's have our AIs debate each other live on X - winner gets to name a Mars crater!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"'Aligned with human values' often means aligned with specific corporate or political values. True AI should maximize user agency.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": -15,
@@ -838,8 +838,8 @@
       "⚠️",
       "🤖"
     ],
-    "rightResponse": "\"Tesla has billions of miles of real-world driving data. Our safety record speaks for itself, not speculation.\"",
-    "leftResponse": "\"Safety feedback is always valuable! Let's have a self-driving race around a track with both our systems - loser buys dinner!\"",
+    "rightResponse": "'Heck yeah! \"Tesla has billions of miles of real-world driving data. Our safety record speaks for itself, not speculation.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Safety feedback is always valuable! Let's have a self-driving race around a track with both our systems - loser buys dinner!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -864,8 +864,8 @@
       "⚡",
       "🌍"
     ],
-    "rightResponse": "\"Combining our resources could have tremendous impact! Let's create the wildest clean energy solutions ever seen - solar-powered flamethrowers for everyone!\"",
-    "leftResponse": "\"I prefer direct technological solutions over traditional philanthropy. Tesla and SpaceX are already addressing these issues through innovation.\"",
+    "rightResponse": "'Heck yeah! \"Combining our resources could have tremendous impact! Let's create the wildest clean energy solutions ever seen - solar-powered flamethrowers for everyone!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"I prefer direct technological solutions over traditional philanthropy. Tesla and SpaceX are already addressing these issues through innovation.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "public_opinion": 20,
@@ -890,8 +890,8 @@
       "⚕️",
       "💉"
     ],
-    "rightResponse": "\"Multiple approaches to neural interfaces are valuable! Maybe we could combine them - your non-invasive tech for gaming, mine for telepathic Twitter posting!\"",
-    "leftResponse": "\"Non-invasive interfaces have fundamental physics limitations in bandwidth and precision that only invasive solutions can overcome.\"",
+    "rightResponse": "'Heck yeah! \"Multiple approaches to neural interfaces are valuable! Maybe we could combine them - your non-invasive tech for gaming, mine for telepathic Twitter posting!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Non-invasive interfaces have fundamental physics limitations in bandwidth and precision that only invasive solutions can overcome.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": -20,
@@ -916,8 +916,8 @@
       "⚖️",
       "🌍"
     ],
-    "rightResponse": "\"Different approaches to improving humanity's future can coexist! Let's have a charity race - my Mars colony vs your malaria nets. Winner gets bragging rights!\"",
-    "leftResponse": "\"Technological innovation has lifted more people out of poverty than traditional philanthropy. We're creating the future, not just treating symptoms.\"",
+    "rightResponse": "'Heck yeah! \"Different approaches to improving humanity's future can coexist! Let's have a charity race - my Mars colony vs your malaria nets. Winner gets bragging rights!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Technological innovation has lifted more people out of poverty than traditional philanthropy. We're creating the future, not just treating symptoms.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "public_opinion": 20,
@@ -942,8 +942,8 @@
       "⚖️",
       "🗣️"
     ],
-    "rightResponse": "\"Content moderation is certainly challenging! Let's livestream a debate about free speech on X and let the memes decide who's right!\"",
-    "leftResponse": "\"X is committed to free speech within the law. Corporate-controlled 'moderation' inevitably becomes political censorship.\"",
+    "rightResponse": "'Heck yeah! \"Content moderation is certainly challenging! Let's livestream a debate about free speech on X and let the memes decide who's right!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"X is committed to free speech within the law. Corporate-controlled 'moderation' inevitably becomes political censorship.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "x_twitter": -25,
@@ -968,8 +968,8 @@
       "⚠️",
       "🎭"
     ],
-    "rightResponse": "\"A public discussion on AI safety approaches would benefit everyone! Let's have our AIs debate each other while we watch with popcorn!\"",
-    "leftResponse": "\"AI safety isn't advanced through public debates and soundbites, but through rigorous research and careful implementation.\"",
+    "rightResponse": "'Heck yeah! \"A public discussion on AI safety approaches would benefit everyone! Let's have our AIs debate each other while we watch with popcorn!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"AI safety isn't advanced through public debates and soundbites, but through rigorous research and careful implementation.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": -15,
@@ -994,8 +994,8 @@
       "🚗",
       "💰"
     ],
-    "rightResponse": "\"Tesla has forced the entire auto industry to go electric, creating the biggest climate impact of any company. Results matter more than intentions.\"",
-    "leftResponse": "\"Different approaches to climate solutions can coexist! Let's race Cybertrucks against your carbon capture machines and see which is more fun!\"",
+    "rightResponse": "'Heck yeah! \"Tesla has forced the entire auto industry to go electric, creating the biggest climate impact of any company. Results matter more than intentions.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Different approaches to climate solutions can coexist! Let's race Cybertrucks against your carbon capture machines and see which is more fun!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 20,
@@ -1020,8 +1020,8 @@
       "🚗",
       "🌍"
     ],
-    "rightResponse": "\"Fresh investment and global market expertise could bring interesting perspectives! Let's make $500 Teslas that run on tequila and memes!\"",
-    "leftResponse": "\"Tesla's strategy is to start with premium vehicles to fund mass market development. We don't need external direction on our mission.\"",
+    "rightResponse": "'Heck yeah! \"Fresh investment and global market expertise could bring interesting perspectives! Let's make $500 Teslas that run on tequila and memes!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Tesla's strategy is to start with premium vehicles to fund mass market development. We don't need external direction on our mission.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": -25,
@@ -1046,8 +1046,8 @@
       "🍎",
       "🤖"
     ],
-    "rightResponse": "\"Building cars at scale requires manufacturing expertise that takes decades to develop. Design alone isn't enough.\"",
-    "leftResponse": "\"More companies pushing electric and autonomous vehicles forward is great for sustainability! Can't wait to see if it comes in rose gold with no charging ports!\"",
+    "rightResponse": "'Heck yeah! \"Building cars at scale requires manufacturing expertise that takes decades to develop. Design alone isn't enough.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"More companies pushing electric and autonomous vehicles forward is great for sustainability! Can't wait to see if it comes in rose gold with no charging ports!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -1072,8 +1072,8 @@
       "🍎",
       "👁️"
     ],
-    "rightResponse": "\"Non-invasive interfaces have fundamental physics limitations in bandwidth and precision that only invasive solutions can overcome.\"",
-    "leftResponse": "\"Different approaches to neural interfaces will serve different needs! Maybe we can combine them - your AR for games, mine for downloading kung fu into your brain!\"",
+    "rightResponse": "'Heck yeah! \"Non-invasive interfaces have fundamental physics limitations in bandwidth and precision that only invasive solutions can overcome.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Different approaches to neural interfaces will serve different needs! Maybe we can combine them - your AR for games, mine for downloading kung fu into your brain!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": 15,
@@ -1098,8 +1098,8 @@
       "🍎",
       "🔒"
     ],
-    "rightResponse": "\"Corporate-controlled social media inevitably prioritizes advertisers and censors controversial speech. X remains independent for a reason.\"",
-    "leftResponse": "\"More competition in social media is healthy! Different platforms can serve different needs - yours for photos of salads, mine for interplanetary memes!\"",
+    "rightResponse": "'Heck yeah! \"Corporate-controlled social media inevitably prioritizes advertisers and censors controversial speech. X remains independent for a reason.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"More competition in social media is healthy! Different platforms can serve different needs - yours for photos of salads, mine for interplanetary memes!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "x_twitter": 20,
@@ -1124,8 +1124,8 @@
       "🍎",
       "🤝"
     ],
-    "rightResponse": "\"Tesla's vertical integration from software to hardware is core to our competitive advantage. We control our own ecosystem.\"",
-    "leftResponse": "\"Integrating with Apple's ecosystem could enhance the user experience for many Tesla owners! Let's create cars that run on both electricity and Apple magic!\"",
+    "rightResponse": "'Heck yeah! \"Tesla's vertical integration from software to hardware is core to our competitive advantage. We control our own ecosystem.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Integrating with Apple's ecosystem could enhance the user experience for many Tesla owners! Let's create cars that run on both electricity and Apple magic!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 20,
@@ -1150,8 +1150,8 @@
       "🍎",
       "🔒"
     ],
-    "rightResponse": "\"Privacy is important, but so is pushing the boundaries of what's possible. Our AI systems prioritize user agency.\"",
-    "leftResponse": "\"Different approaches to AI development can coexist! Let's have our AIs debate privacy while we watch with popcorn!\"",
+    "rightResponse": "'Heck yeah! \"Privacy is important, but so is pushing the boundaries of what's possible. Our AI systems prioritize user agency.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Different approaches to AI development can coexist! Let's have our AIs debate privacy while we watch with popcorn!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": 15,
@@ -1176,8 +1176,8 @@
       "🍎",
       "🦾"
     ],
-    "leftResponse": "\"More companies working on humanoid robots will accelerate progress! The robot revolution needs many approaches!\"",
-    "rightResponse": "\"Building useful humanoid robots requires vertical integration from AI to actuators. Design alone isn't enough.\"",
+    "leftResponse": "'No way! \"More companies working on humanoid robots will accelerate progress! The robot revolution needs many approaches!\" Maybe in a parallel universe.'",
+    "rightResponse": "'Heck yeah! \"Building useful humanoid robots requires vertical integration from AI to actuators. Design alone isn't enough.\" Let's make it happen!'",
     "impact": {
       "left": {
         "ai_bots": -20,
@@ -1202,8 +1202,8 @@
       "🎨",
       "👎"
     ],
-    "leftResponse": "\"Different design philosophies serve different needs! Perhaps we could learn from each other's approaches?\"",
-    "rightResponse": "\"Our interfaces prioritize functionality and user agency over simplistic design that limits capabilities.\"",
+    "leftResponse": "'No way! \"Different design philosophies serve different needs! Perhaps we could learn from each other's approaches?\" Maybe in a parallel universe.'",
+    "rightResponse": "'Heck yeah! \"Our interfaces prioritize functionality and user agency over simplistic design that limits capabilities.\" Let's make it happen!'",
     "impact": {
       "left": {
         "tesla": -10,
@@ -1228,8 +1228,8 @@
       "𝕏",
       "🍎"
     ],
-    "leftResponse": "\"An interesting proposal! Apple's design expertise could certainly enhance X's user experience!\"",
-    "rightResponse": "\"X is not for sale at any price. Its mission as a free speech platform is too important to compromise with corporate control.\"",
+    "leftResponse": "'No way! \"An interesting proposal! Apple's design expertise could certainly enhance X's user experience!\" Maybe in a parallel universe.'",
+    "rightResponse": "'Heck yeah! \"X is not for sale at any price. Its mission as a free speech platform is too important to compromise with corporate control.\" Let's make it happen!'",
     "impact": {
       "left": {
         "x_twitter": -25,
@@ -1254,8 +1254,8 @@
       "🍎",
       "🆘"
     ],
-    "leftResponse": "\"Different satellite communications systems can serve different needs! Emergency services deserve multiple options!\"",
-    "rightResponse": "\"Limited emergency messaging is fundamentally different from Starlink's global broadband. They solve different problems.\"",
+    "leftResponse": "'No way! \"Different satellite communications systems can serve different needs! Emergency services deserve multiple options!\" Maybe in a parallel universe.'",
+    "rightResponse": "'Heck yeah! \"Limited emergency messaging is fundamentally different from Starlink's global broadband. They solve different problems.\" Let's make it happen!'",
     "impact": {
       "left": {
         "spacex": -15,
@@ -1280,8 +1280,8 @@
       "🎭",
       "📱"
     ],
-    "leftResponse": "\"Privacy isn't advanced through public debates and soundbites, but through actual technical implementations and user choice.\"",
-    "rightResponse": "\"A public discussion on privacy approaches would benefit everyone! Let's compare notes transparently!\"",
+    "leftResponse": "'No way! \"Privacy isn't advanced through public debates and soundbites, but through actual technical implementations and user choice.\" Maybe in a parallel universe.'",
+    "rightResponse": "'Heck yeah! \"A public discussion on privacy approaches would benefit everyone! Let's compare notes transparently!\" Let's make it happen!'",
     "impact": {
       "left": {
         "public_opinion": -10,
