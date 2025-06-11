@@ -6,8 +6,8 @@
       "🤝",
       "💰"
     ],
-    "rightResponse": "'Another platform? The world isn't ready for that much winning! But okay, let's make social media great again!'",
-    "leftResponse": "'Don, with all due respect, I'm trying to get to Mars, not into another Twitter war. Hard pass.'",
+    "rightResponse": "'Heck yeah! Another platform? The world isn't ready for that much winning! But okay, let's make social media great again! Let's make it happen!'",
+    "leftResponse": "'No way! Don, with all due respect, I'm trying to get to Mars, not into another Twitter war. Hard pass. Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "x_twitter": -15,
@@ -32,8 +32,8 @@
       "🌕",
       "⛳"
     ],
-    "rightResponse": "'Don, I appreciate the enthusiasm, but my rockets are for science, not for losing your golf balls in craters.'",
-    "leftResponse": "'Lunar golf? Sounds like a hole-in-one for interplanetary marketing! Let's do it!'",
+    "rightResponse": "'Heck yeah! Don, I appreciate the enthusiasm, but my rockets are for science, not for losing your golf balls in craters. Let's make it happen!'",
+    "leftResponse": "'No way! Lunar golf? Sounds like a hole-in-one for interplanetary marketing! Let's do it! Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 10,
@@ -58,8 +58,8 @@
       "🇺🇸",
       "✨"
     ],
-    "rightResponse": "'A gold-plated, bulletproof Cybertruck? The ultimate campaign vehicle! Consider it done, Mr. President!'",
-    "leftResponse": "'While the Cybertruck is tough, gold plating might affect its drag coefficient. And I'm staying out of politics.'",
+    "rightResponse": "'Heck yeah! A gold-plated, bulletproof Cybertruck? The ultimate campaign vehicle! Consider it done, Mr. President! Let's make it happen!'",
+    "leftResponse": "'No way! While the Cybertruck is tough, gold plating might affect its drag coefficient. And I'm staying out of politics. Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": -5,
@@ -84,8 +84,8 @@
       "✨",
       "👗"
     ],
-    "rightResponse": "'Don, astronauts need functional gear, not fashion statements. Let's stick to practical designs, please.'",
-    "leftResponse": "'Gold lamé in space? Daring! The astronauts will look fabulous. Melania has great taste!'",
+    "rightResponse": "'Heck yeah! Don, astronauts need functional gear, not fashion statements. Let's stick to practical designs, please. Let's make it happen!'",
+    "leftResponse": "'No way! Gold lamé in space? Daring! The astronauts will look fabulous. Melania has great taste! Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 5,
@@ -110,8 +110,8 @@
       "🚀",
       "🎤"
     ],
-    "rightResponse": "'A rally at Starbase? The energy would be astronomical! Let's make some noise!'",
-    "leftResponse": "'Starbase is a rocket factory, Don, not a political venue. Security and operational focus are my priorities.'",
+    "rightResponse": "'Heck yeah! A rally at Starbase? The energy would be astronomical! Let's make some noise! Let's make it happen!'",
+    "leftResponse": "'No way! Starbase is a rocket factory, Don, not a political venue. Security and operational focus are my priorities. Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": -15,
@@ -136,8 +136,8 @@
       "🏷️",
       "🇺🇸"
     ],
-    "rightResponse": "'Mars has a name, Don. And it belongs to humanity, not one person. Let's keep it that way.'",
-    "leftResponse": "'Trump Prime? A bold choice! It certainly has a powerful sound. History in the making!'",
+    "rightResponse": "'Heck yeah! Mars has a name, Don. And it belongs to humanity, not one person. Let's keep it that way. Let's make it happen!'",
+    "leftResponse": "'No way! Trump Prime? A bold choice! It certainly has a powerful sound. History in the making! Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": 15,
@@ -162,8 +162,8 @@
       "👍",
       "😇"
     ],
-    "rightResponse": "'Neuralink is about expanding human potential, Don, not controlling thoughts. That's a line we don't cross.'",
-    "leftResponse": "'A positivity chip? Fascinating! Imagine the approval ratings! A true game-changer for leaders!'",
+    "rightResponse": "'Heck yeah! Neuralink is about expanding human potential, Don, not controlling thoughts. That's a line we don't cross. Let's make it happen!'",
+    "leftResponse": "'No way! A positivity chip? Fascinating! Imagine the approval ratings! A true game-changer for leaders! Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": 15,
@@ -188,8 +188,8 @@
       "👽",
       "🚀"
     ],
-    "rightResponse": "'Don, space is vast. A wall isn't feasible. Plus, if advanced aliens arrive, a wall won't stop them. Diplomacy might.'",
-    "leftResponse": "'A Space Wall! Tremendous! We'll make the aliens pay for it! Protecting Earth, one parsec at a time!'",
+    "rightResponse": "'Heck yeah! Don, space is vast. A wall isn't feasible. Plus, if advanced aliens arrive, a wall won't stop them. Diplomacy might. Let's make it happen!'",
+    "leftResponse": "'No way! A Space Wall! Tremendous! We'll make the aliens pay for it! Protecting Earth, one parsec at a time! Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 10,
@@ -214,8 +214,8 @@
       "🤖",
       "🏈"
     ],
-    "rightResponse": "'A Trump original anthem by Tesla Bots? The ratings would be through the roof! A cultural reset!'",
-    "leftResponse": "'Don, the national anthem is sacred to many. And Tesla Bots are for labor, not halftime shows. I must decline.'",
+    "rightResponse": "'Heck yeah! A Trump original anthem by Tesla Bots? The ratings would be through the roof! A cultural reset! Let's make it happen!'",
+    "leftResponse": "'No way! Don, the national anthem is sacred to many. And Tesla Bots are for labor, not halftime shows. I must decline. Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": -5,
@@ -240,8 +240,8 @@
       "🇺🇸",
       "📈"
     ],
-    "rightResponse": "'Don, the crypto market is volatile enough. Adding another personality-driven coin might not be wise. Let's stick to tech.'",
-    "leftResponse": "'TrumpCoin! The people would love it! To the moon, indeed! It's a fantastic idea, Don!'",
+    "rightResponse": "'Heck yeah! Don, the crypto market is volatile enough. Adding another personality-driven coin might not be wise. Let's stick to tech. Let's make it happen!'",
+    "leftResponse": "'No way! TrumpCoin! The people would love it! To the moon, indeed! It's a fantastic idea, Don! Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "crypto": 10,

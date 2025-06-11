@@ -6,8 +6,8 @@
       "🇹🇷",
       "🚗"
     ],
-    "rightResponse": "\"A Turkish Gigafactory? Perfect gateway to Europe and Asia! Let's revolutionize Turkey's automotive industry!\"",
-    "leftResponse": "\"While I appreciate the offer, our current factory locations are strategically sufficient for our global operations.\"",
+    "rightResponse": "'Heck yeah! \"A Turkish Gigafactory? Perfect gateway to Europe and Asia! Let's revolutionize Turkey's automotive industry!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"While I appreciate the offer, our current factory locations are strategically sufficient for our global operations.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -32,8 +32,8 @@
       "🇹🇷",
       "👨‍🚀"
     ],
-    "rightResponse": "\"A Turkish astronaut program? Expanding space access globally is exactly what humanity needs!\"",
-    "leftResponse": "\"Space programs require extensive infrastructure and training. Perhaps start with satellite launches instead.\"",
+    "rightResponse": "'Heck yeah! \"A Turkish astronaut program? Expanding space access globally is exactly what humanity needs!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Space programs require extensive infrastructure and training. Perhaps start with satellite launches instead.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 10,
@@ -58,8 +58,8 @@
       "🏥",
       "🇹🇷"
     ],
-    "rightResponse": "\"Accelerated medical approval? This could help thousands of patients years earlier than elsewhere!\"",
-    "leftResponse": "\"Medical technology requires rigorous testing regardless of location. We can't compromise on safety protocols.\"",
+    "rightResponse": "'Heck yeah! \"Accelerated medical approval? This could help thousands of patients years earlier than elsewhere!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Medical technology requires rigorous testing regardless of location. We can't compromise on safety protocols.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": 15,
@@ -84,8 +84,8 @@
       "🇹🇷",
       "💰"
     ],
-    "rightResponse": "\"A government-backed crypto with corporate support? This could revolutionize national digital currencies!\"",
-    "leftResponse": "\"Mixing government and corporate interests in cryptocurrency creates too many regulatory complications.\"",
+    "rightResponse": "'Heck yeah! \"A government-backed crypto with corporate support? This could revolutionize national digital currencies!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Mixing government and corporate interests in cryptocurrency creates too many regulatory complications.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "crypto": 15,
@@ -110,8 +110,8 @@
       "🚗",
       "🏙️"
     ],
-    "rightResponse": "\"An AI hub in Istanbul bridging East and West? Perfect for developing region-specific autonomous solutions!\"",
-    "leftResponse": "\"Our AI development is centralized for consistency. Regional adaptations come after core technology is perfected.\"",
+    "rightResponse": "'Heck yeah! \"An AI hub in Istanbul bridging East and West? Perfect for developing region-specific autonomous solutions!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Our AI development is centralized for consistency. Regional adaptations come after core technology is perfected.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": 15,
@@ -136,8 +136,8 @@
       "🔋",
       "🇹🇷"
     ],
-    "rightResponse": "\"The largest solar farm with Tesla batteries? A perfect showcase for renewable energy's potential!\"",
-    "leftResponse": "\"While I support renewable energy, such massive projects require more diverse supplier partnerships.\"",
+    "rightResponse": "'Heck yeah! \"The largest solar farm with Tesla batteries? A perfect showcase for renewable energy's potential!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"While I support renewable energy, such massive projects require more diverse supplier partnerships.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -162,8 +162,8 @@
       "🌊",
       "🔮"
     ],
-    "rightResponse": "\"A futuristic tech city from scratch? The perfect testing ground for all our most advanced technologies!\"",
-    "leftResponse": "\"Urban development requires local expertise and cultural understanding that I lack for Turkey.\"",
+    "rightResponse": "'Heck yeah! \"A futuristic tech city from scratch? The perfect testing ground for all our most advanced technologies!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Urban development requires local expertise and cultural understanding that I lack for Turkey.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "legacy": 15,
@@ -188,8 +188,8 @@
       "🏫",
       "🇹🇷"
     ],
-    "rightResponse": "\"Connecting every Turkish school to high-speed internet? Education is the foundation of progress!\"",
-    "leftResponse": "\"Educational connectivity should be managed by specialized educational technology providers, not Starlink.\"",
+    "rightResponse": "'Heck yeah! \"Connecting every Turkish school to high-speed internet? Education is the foundation of progress!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Educational connectivity should be managed by specialized educational technology providers, not Starlink.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 10,
@@ -214,8 +214,8 @@
       "🪐",
       "🇹🇷"
     ],
-    "rightResponse": "\"A Turkish-American Mars mission? Expanding international cooperation in space is exactly what we need!\"",
-    "leftResponse": "\"Mars missions require decades of aerospace experience. Perhaps start with lunar or orbital projects first.\"",
+    "rightResponse": "'Heck yeah! \"A Turkish-American Mars mission? Expanding international cooperation in space is exactly what we need!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Mars missions require decades of aerospace experience. Perhaps start with lunar or orbital projects first.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": 15,
@@ -240,8 +240,8 @@
       "🏙️",
       "🇹🇷"
     ],
-    "rightResponse": "\"Connecting continents underground? The perfect showcase for Boring Company technology on a historic scale!\"",
-    "leftResponse": "\"The Bosphorus has unique geological challenges that make tunneling particularly risky and complex.\"",
+    "rightResponse": "'Heck yeah! \"Connecting continents underground? The perfect showcase for Boring Company technology on a historic scale!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"The Bosphorus has unique geological challenges that make tunneling particularly risky and complex.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "legacy": 15,
@@ -266,8 +266,8 @@
       "🇸🇦",
       "💰"
     ],
-    "rightResponse": "\"A Saudi Gigafactory with guaranteed energy costs? Perfect for expanding our Middle East presence!\"",
-    "leftResponse": "\"While I appreciate the offer, our factory locations need to align with our global supply chain strategy.\"",
+    "rightResponse": "'Heck yeah! \"A Saudi Gigafactory with guaranteed energy costs? Perfect for expanding our Middle East presence!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"While I appreciate the offer, our factory locations need to align with our global supply chain strategy.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -292,8 +292,8 @@
       "🏙️",
       "🇸🇦"
     ],
-    "rightResponse": "\"A nationwide Hyperloop in Saudi Arabia? The perfect showcase for next-generation transportation!\"",
-    "leftResponse": "\"Hyperloop technology still needs more testing before deployment at such a massive scale.\"",
+    "rightResponse": "'Heck yeah! \"A nationwide Hyperloop in Saudi Arabia? The perfect showcase for next-generation transportation!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Hyperloop technology still needs more testing before deployment at such a massive scale.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "legacy": 20,
@@ -318,8 +318,8 @@
       "🏜️",
       "🔋"
     ],
-    "rightResponse": "\"Turning the Saudi desert into the world's largest clean energy producer? Revolutionary!\"",
-    "leftResponse": "\"While solar in Saudi Arabia makes sense, I prefer to keep Tesla's battery technology independent.\"",
+    "rightResponse": "'Heck yeah! \"Turning the Saudi desert into the world's largest clean energy producer? Revolutionary!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"While solar in Saudi Arabia makes sense, I prefer to keep Tesla's battery technology independent.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 15,
@@ -344,8 +344,8 @@
       "🌊",
       "🇸🇦"
     ],
-    "rightResponse": "\"A Red Sea launch facility? Perfect equatorial location with excellent logistics access!\"",
-    "leftResponse": "\"Launch facilities require specific geographic and political stability considerations beyond financial incentives.\"",
+    "rightResponse": "'Heck yeah! \"A Red Sea launch facility? Perfect equatorial location with excellent logistics access!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Launch facilities require specific geographic and political stability considerations beyond financial incentives.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "spacex": 15,
@@ -370,8 +370,8 @@
       "🛢️",
       "💰"
     ],
-    "rightResponse": "\"A resource-backed cryptocurrency? This could revolutionize how natural resources are traded globally!\"",
-    "leftResponse": "\"Cryptocurrencies should be decentralized and not tied to specific governments or resources.\"",
+    "rightResponse": "'Heck yeah! \"A resource-backed cryptocurrency? This could revolutionize how natural resources are traded globally!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Cryptocurrencies should be decentralized and not tied to specific governments or resources.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "crypto": 15,
@@ -396,8 +396,8 @@
       "🤖",
       "🚕"
     ],
-    "rightResponse": "\"A city designed from scratch for autonomous vehicles only? The perfect real-world showcase!\"",
-    "leftResponse": "\"Autonomous technology should be integrated gradually alongside human drivers for optimal safety.\"",
+    "rightResponse": "'Heck yeah! \"A city designed from scratch for autonomous vehicles only? The perfect real-world showcase!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Autonomous technology should be integrated gradually alongside human drivers for optimal safety.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 20,
@@ -422,8 +422,8 @@
       "🏥",
       "🇸🇦"
     ],
-    "rightResponse": "\"A Neuralink research center in Saudi Arabia? Expanding global neuroscience collaboration is crucial!\"",
-    "leftResponse": "\"Neuralink research needs to remain centralized until core technologies are fully developed and tested.\"",
+    "rightResponse": "'Heck yeah! \"A Neuralink research center in Saudi Arabia? Expanding global neuroscience collaboration is crucial!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Neuralink research needs to remain centralized until core technologies are fully developed and tested.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": 15,
@@ -448,8 +448,8 @@
       "🏜️",
       "🏙️"
     ],
-    "rightResponse": "\"A Mars simulation in the Saudi desert? Perfect analog environment for testing Mars habitation technologies!\"",
-    "leftResponse": "\"Mars simulations require specific scientific oversight that might be compromised by tourism or publicity goals.\"",
+    "rightResponse": "'Heck yeah! \"A Mars simulation in the Saudi desert? Perfect analog environment for testing Mars habitation technologies!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Mars simulations require specific scientific oversight that might be compromised by tourism or publicity goals.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": 20,
@@ -474,8 +474,8 @@
       "⚡",
       "💼"
     ],
-    "rightResponse": "\"A Tesla-only economic zone? The perfect showcase for a fully electric transportation ecosystem!\"",
-    "leftResponse": "\"While I appreciate the support, vehicle choice should remain open to foster healthy competition.\"",
+    "rightResponse": "'Heck yeah! \"A Tesla-only economic zone? The perfect showcase for a fully electric transportation ecosystem!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"While I appreciate the support, vehicle choice should remain open to foster healthy competition.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 20,
@@ -500,8 +500,8 @@
       "🇸🇦",
       "💰"
     ],
-    "rightResponse": "\"Making X the official government platform? A powerful demonstration of digital transformation!\"",
-    "leftResponse": "\"X should remain politically neutral and not become officially aligned with any specific government.\"",
+    "rightResponse": "'Heck yeah! \"Making X the official government platform? A powerful demonstration of digital transformation!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"X should remain politically neutral and not become officially aligned with any specific government.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "x_twitter": 20,
@@ -526,8 +526,8 @@
       "🧠",
       "🌌"
     ],
-    "rightResponse": "\"I'd love to do another podcast, Joe, but perhaps we should keep it substance-free and focused on technology.\"",
-    "leftResponse": "\"A 5-hour DMT podcast? The universe isn't ready, but let's break the simulation anyway!\"",
+    "rightResponse": "'Heck yeah! \"I'd love to do another podcast, Joe, but perhaps we should keep it substance-free and focused on technology.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"A 5-hour DMT podcast? The universe isn't ready, but let's break the simulation anyway!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "public_opinion": 15,
@@ -552,8 +552,8 @@
       "🎙️",
       "📈"
     ],
-    "rightResponse": "\"Medical procedures should never be performed as entertainment. Safety and privacy come first.\"",
-    "leftResponse": "\"Live Neuralink implantation on the world's biggest podcast? Revolutionary for science communication!\"",
+    "rightResponse": "'Heck yeah! \"Medical procedures should never be performed as entertainment. Safety and privacy come first.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Live Neuralink implantation on the world's biggest podcast? Revolutionary for science communication!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": -10,
@@ -578,8 +578,8 @@
       "🎙️",
       "💨"
     ],
-    "rightResponse": "\"A podcast studio on wheels? Revolutionary for the creator economy! The vaporizer might need some legal review though...\"",
-    "leftResponse": "\"While a podcast-optimized Tesla sounds interesting, I think we'll skip the integrated drug delivery systems.\"",
+    "rightResponse": "'Heck yeah! \"A podcast studio on wheels? Revolutionary for the creator economy! The vaporizer might need some legal review though...\" Let's make it happen!'",
+    "leftResponse": "'No way! \"While a podcast-optimized Tesla sounds interesting, I think we'll skip the integrated drug delivery systems.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "tesla": 10,
@@ -604,8 +604,8 @@
       "🪐",
       "📱"
     ],
-    "rightResponse": "\"I think we should focus on getting humans to Mars for science first, before we start planning the entertainment.\"",
-    "leftResponse": "\"The first interplanetary cage match? This is exactly the future I've been working toward!\"",
+    "rightResponse": "'Heck yeah! \"I think we should focus on getting humans to Mars for science first, before we start planning the entertainment.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"The first interplanetary cage match? This is exactly the future I've been working toward!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": 10,
@@ -630,8 +630,8 @@
       "🐙",
       "🦅"
     ],
-    "rightResponse": "\"Animal consciousness simulation? The ultimate empathy machine! Let's start with eagles for the flying experience!\"",
-    "leftResponse": "\"Neuralink is focused on medical applications first. Animal consciousness simulation is far beyond our current capabilities.\"",
+    "rightResponse": "'Heck yeah! \"Animal consciousness simulation? The ultimate empathy machine! Let's start with eagles for the flying experience!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Neuralink is focused on medical applications first. Animal consciousness simulation is far beyond our current capabilities.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": -15,
@@ -656,8 +656,8 @@
       "🎙️",
       "🪐"
     ],
-    "rightResponse": "\"The first interplanetary podcast? Broadcasting from Mars would be revolutionary for space communication!\"",
-    "leftResponse": "\"The first Mars missions will be extremely dangerous and resource-constrained. Entertainment can't be a priority.\"",
+    "rightResponse": "'Heck yeah! \"The first interplanetary podcast? Broadcasting from Mars would be revolutionary for space communication!\" Let's make it happen!'",
+    "leftResponse": "'No way! \"The first Mars missions will be extremely dangerous and resource-constrained. Entertainment can't be a priority.\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": -10,
@@ -682,8 +682,8 @@
       "🎙️",
       "🗣️"
     ],
-    "rightResponse": "\"Creating AI duplicates of real people raises serious ethical concerns about authenticity and consent.\"",
-    "leftResponse": "\"An AI Joe Rogan? The perfect testing ground for our voice synthesis technology! It'll never run out of questions!\"",
+    "rightResponse": "'Heck yeah! \"Creating AI duplicates of real people raises serious ethical concerns about authenticity and consent.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"An AI Joe Rogan? The perfect testing ground for our voice synthesis technology! It'll never run out of questions!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "ai_bots": -10,
@@ -708,8 +708,8 @@
       "🎙️",
       "📈"
     ],
-    "rightResponse": "\"Cryptocurrencies need stable foundations. Tying value to entertainment metrics creates too much volatility.\"",
-    "leftResponse": "\"A podcast-backed cryptocurrency? The perfect intersection of content and finance! Revolutionary!\"",
+    "rightResponse": "'Heck yeah! \"Cryptocurrencies need stable foundations. Tying value to entertainment metrics creates too much volatility.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"A podcast-backed cryptocurrency? The perfect intersection of content and finance! Revolutionary!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "crypto": 10,
@@ -734,8 +734,8 @@
       "🪐",
       "🦌"
     ],
-    "rightResponse": "\"Mars won't have any animals to hunt, Joe. And bringing Earth animals there would be an ecological disaster.\"",
-    "leftResponse": "\"Martian bow hunting? The ultimate test of human adaptation to alien environments! Let's make it happen!\"",
+    "rightResponse": "'Heck yeah! \"Mars won't have any animals to hunt, Joe. And bringing Earth animals there would be an ecological disaster.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Martian bow hunting? The ultimate test of human adaptation to alien environments! Let's make it happen!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "mars": 15,
@@ -760,8 +760,8 @@
       "🐵",
       "💭"
     ],
-    "rightResponse": "\"Neuralink is focused on helping humans with disabilities first. Exotic pet communication is not our priority.\"",
-    "leftResponse": "\"Primate-to-human telepathy? The ultimate breakthrough in interspecies communication! Let's make it happen!\"",
+    "rightResponse": "'Heck yeah! \"Neuralink is focused on helping humans with disabilities first. Exotic pet communication is not our priority.\" Let's make it happen!'",
+    "leftResponse": "'No way! \"Primate-to-human telepathy? The ultimate breakthrough in interspecies communication! Let's make it happen!\" Maybe in a parallel universe.'",
     "impact": {
       "right": {
         "neuralink": 15,
