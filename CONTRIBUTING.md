@@ -2,6 +2,8 @@
 
 Thank you for taking the time to contribute!
 
+Please use the GitHub issue templates when opening a new issue. Choose **Bug report**, **Feature request**, or **Question submission** so we can respond quickly.
+
 ## Submitting Questions
 
 1. [Fork](https://github.com/yourname/elonmusksimulator/fork) this repository and clone your fork.
@@ -14,5 +16,7 @@ Thank you for taking the time to contribute!
 2. Make your changes and commit them with clear messages.
 3. Open a pull request against `main` describing your changes.
 4. Respond to any review comments and update your PR as needed.
+
+All pull requests should follow the checklist in `.github/PULL_REQUEST_TEMPLATE.md` which includes running the linter and tests and adding screenshots when the UI changes.
 
 We appreciate your ideas and help!
