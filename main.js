@@ -1,4 +1,5 @@
 import { t, getLanguage, updateTexts, setLanguage, initI18n } from './translations.js';
+import { loadHighScore, saveHighScore } from './score.mjs';
 
 // Vital status definitions with symbols and colors
 const vitalStatuses = {
@@ -23,6 +24,8 @@ let currentQuestionIndex = 0;
 let isGameOver = false;
 let shuffledQuestions = [];
 let currentQuestion = null;
+let currentScore = 0;
+let bestScore = 0;
 
 // Animation and interaction state flags
 let isAnimating = false;
@@ -128,6 +131,13 @@ function updateVitalElements() {
     
     // Check for game over condition
     checkGameOver();
+}
+
+function updateScoreDisplay() {
+    const current = document.getElementById('current-score');
+    const best = document.getElementById('best-score');
+    if (current) current.textContent = currentScore;
+    if (best) best.textContent = bestScore;
 }
 
 // Check if any vital has reached 0 or 100
@@ -497,6 +507,12 @@ function completeSwipe(card, isRight) {
         
         // Move to next question
         currentQuestionIndex++;
+        currentScore++;
+        if (currentScore > bestScore) {
+            bestScore = currentScore;
+            saveHighScore(bestScore);
+        }
+        updateScoreDisplay();
         
         // Create a new card after the current one is gone
         setTimeout(async () => {
@@ -651,6 +667,9 @@ async function initGame() {
     // Reset game state
     isGameOver = false;
     currentQuestionIndex = 0;
+    currentScore = 0;
+    bestScore = loadHighScore();
+    updateScoreDisplay();
     
     // Reset vital statuses
     for (const key in vitalStatuses) {
