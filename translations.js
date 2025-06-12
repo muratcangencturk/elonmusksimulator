@@ -6,7 +6,9 @@ export const dictionaries = {
     gameOverMessage: "Your decisions have led to a catastrophic failure in one of Elon's ventures.",
     swipeInstruction: '\u2190 swipe left or right to answer \u2192',
     tryAgain: 'Try Again',
-    quit: 'Quit'
+    quit: 'Quit',
+    score: 'Score',
+    bestScore: 'Best'
   },
   tr: {
     title: 'ELON MUSK SIM\u00dcLAT\u00d6R\u00dc',
@@ -15,7 +17,9 @@ export const dictionaries = {
     gameOverMessage: 'Kararlar\u0131n Elon\'un girisimlerinden birinde felakete yol acti.',
     swipeInstruction: '\u2190 cevaplamak icin sola ya da saga kaydir \u2192',
     tryAgain: 'Tekrar Dene',
-    quit: 'Cik'
+    quit: 'Cik',
+    score: 'Skor',
+    bestScore: 'En Iyi'
   }
 };
 
@@ -57,6 +61,12 @@ export function updateTexts() {
 
   const quitBtn = document.getElementById('quit-button');
   if (quitBtn) quitBtn.textContent = t('quit');
+
+  const scoreLabel = document.getElementById('score-label');
+  if (scoreLabel) scoreLabel.textContent = t('score') + ':';
+
+  const bestLabel = document.getElementById('best-score-label');
+  if (bestLabel) bestLabel.textContent = t('bestScore') + ':';
 }
 
 export function initI18n() {
