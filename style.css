@@ -113,8 +113,8 @@ body {
 
 .scoreboard {
     text-align: center;
-    margin-bottom: 10px;
-    font-size: 1em;
+    margin-bottom: 0;
+    font-size: 0.8em;
     opacity: 0.9;
 }
 
@@ -363,25 +363,25 @@ body {
     background: #2980b9;
 }
 
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
 .language-toggle {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 100;
-}
-
-.language-toggle button {
-    margin-right: 5px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    background: #fff;
-    color: #000;
     cursor: pointer;
-    font-size: 0.8rem;
 }
 
-.language-toggle button:focus {
-    outline: 2px solid #000;
+.language-toggle span {
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.language-toggle span:focus {
+    outline: 2px solid #fff;
     outline-offset: 2px;
 }
