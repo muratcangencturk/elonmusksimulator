@@ -4,7 +4,9 @@ const vm = require('vm');
 
 function loadQuestions() {
   const dir = path.resolve(__dirname, '..');
-  const files = fs.readdirSync(dir).filter(f => /^questions(\.|$)/.test(f) || /^new_questions_batch\d+\.js$/.test(f));
+  const files = fs.readdirSync(dir).filter(f =>
+    /^questions/.test(f) || /^new_questions_batch\d+/.test(f)
+  );
   const all = [];
   files.forEach(file => {
     const content = fs.readFileSync(path.join(dir, file), 'utf8');
@@ -32,6 +34,14 @@ describe('questions data', () => {
       expect(q).toHaveProperty('impact');
       expect(q.impact).toHaveProperty('left');
       expect(q.impact).toHaveProperty('right');
+    });
+  });
+
+  test('no empty text or responses', () => {
+    questions.forEach(q => {
+      expect(q.text.trim().length).toBeGreaterThan(0);
+      expect(q.leftResponse.trim().length).toBeGreaterThan(0);
+      expect(q.rightResponse.trim().length).toBeGreaterThan(0);
     });
   });
 
