@@ -2,7 +2,7 @@
 Explain the purpose of this PR.
 
 ## Checklist
-- [ ] Ran `npx eslint .` and fixed any linting errors
+- [ ] Ran `npm run lint` and fixed any linting errors
 - [ ] Ran `npm test` and all tests pass
 - [ ] Updated screenshots or other assets if needed
 

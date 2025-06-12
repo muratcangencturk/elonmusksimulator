@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: '18'
       - name: Run ESLint
-        run: npx -y eslint@8 .
+        run: npm run lint
