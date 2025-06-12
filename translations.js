@@ -8,7 +8,8 @@ export const dictionaries = {
     tryAgain: 'Try Again',
     quit: 'Quit',
     score: 'Score',
-    bestScore: 'Best'
+    bestScore: 'Best',
+    share: 'Share'
   },
   tr: {
     title: 'ELON MUSK SIM\u00dcLAT\u00d6R\u00dc',
@@ -19,7 +20,8 @@ export const dictionaries = {
     tryAgain: 'Tekrar Dene',
     quit: 'Cik',
     score: 'Skor',
-    bestScore: 'En Iyi'
+    bestScore: 'En Iyi',
+    share: 'Paylas'
   }
 };
 
@@ -58,6 +60,9 @@ export function updateTexts() {
 
   const restartBtn = document.getElementById('restart-button');
   if (restartBtn) restartBtn.textContent = t('tryAgain');
+
+  const shareBtn = document.getElementById('share-button');
+  if (shareBtn) shareBtn.textContent = t('share');
 
   const quitBtn = document.getElementById('quit-button');
   if (quitBtn) quitBtn.textContent = t('quit');

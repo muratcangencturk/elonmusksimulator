@@ -354,6 +354,15 @@ body {
     background: #c0392b;
 }
 
+.share-button {
+    background: #3498db;
+    color: #000;
+}
+
+.share-button:hover {
+    background: #2980b9;
+}
+
 .language-toggle {
     position: fixed;
     top: 10px;
