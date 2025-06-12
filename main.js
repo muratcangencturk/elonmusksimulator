@@ -570,7 +570,16 @@ function shuffleArray(array) {
     return array;
 }
 
-// Add Innovation impact to existing questions
+// Filter out questions missing required text or responses
+function filterValidQuestions(arr) {
+    return arr.filter(q => {
+        const text = q.text && q.text.trim();
+        const left = q.leftResponse && q.leftResponse.trim();
+        const right = q.rightResponse && q.rightResponse.trim();
+        return text && left && right;
+    });
+}
+
 function addInnovationImpactToQuestions(questionsArray) {
     return questionsArray.map(question => {
         // Deep clone the question to avoid modifying the original
@@ -626,13 +635,15 @@ async function loadCategory(name) {
     try {
         const response = await fetch(cat.file[getLanguage()]);
         const data = await response.json();
-        cat.questions = addInnovationImpactToQuestions(data);
+        const valid = filterValidQuestions(data);
+        cat.questions = addInnovationImpactToQuestions(valid);
         cat.loaded = true;
     } catch (err) {
         console.warn(`Fetch failed for ${cat.file[getLanguage()]}, attempting module import`, err);
         try {
             const module = await import(/* webpackIgnore: true */ `./${cat.file[getLanguage()]}`);
-            cat.questions = addInnovationImpactToQuestions(module.default);
+            const valid = filterValidQuestions(module.default);
+            cat.questions = addInnovationImpactToQuestions(valid);
             cat.loaded = true;
         } catch (importErr) {
             console.error('Failed to load questions:', importErr);
