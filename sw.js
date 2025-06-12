@@ -1,4 +1,4 @@
-const CACHE_NAME = 'elon-sim-cache-v1';
+const CACHE_NAME = 'elon-sim-cache-v2';
 const ASSETS = [
   './',
   'index.html',
@@ -10,6 +10,12 @@ const ASSETS = [
   'new_questions_batch3.json',
   'new_questions_batch4.json',
   'new_questions_batch5.json',
+  'tech.json',
+  'tech_tr.json',
+  'politics.json',
+  'politics_tr.json',
+  'misc.json',
+  'misc_tr.json',
   'elon_musk_cartoon.png',
   'elon_musk_happy.png',
   'elon_musk_angry.png',
