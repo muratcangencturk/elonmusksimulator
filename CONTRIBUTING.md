@@ -17,6 +17,9 @@ Please use the GitHub issue templates when opening a new issue. Choose **Bug rep
 3. Open a pull request against `main` describing your changes.
 4. Respond to any review comments and update your PR as needed.
 
+Before submitting, run `npm run lint` to check code style and `npm run format`
+to automatically apply formatting fixes.
+
 All pull requests should follow the checklist in `.github/PULL_REQUEST_TEMPLATE.md` which includes running the linter and tests and adding screenshots when the UI changes.
 
 We appreciate your ideas and help!

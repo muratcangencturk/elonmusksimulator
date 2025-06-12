@@ -34,6 +34,9 @@ Run `npm run normalize` anytime you add new questions to ensure left/right
 responses follow the expected structure. Use `npm run categorize` to generate
 `tech.json`, `politics.json` and `misc.json` from the question files.
 
+Run `npm run lint` to check code style with ESLint and `npm run format` to
+automatically format the project using Prettier.
+
 ## Live Demo
 
 Play it online here:
