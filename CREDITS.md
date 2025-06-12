@@ -8,4 +8,4 @@
 
 ## Question Texts
 
-All question prompts found in `questions.js` and the `new_questions_batch*.js` files are original comedic works crafted for this game with the aid of generative AI. They do not quote or reuse third-party copyrighted material. These texts are released under the same Apache 2.0 license as the rest of the repository.
+All question prompts found in `questions.json` and the `new_questions_batch*.js` files are original comedic works crafted for this game with the aid of generative AI. They do not quote or reuse third-party copyrighted material. These texts are released under the same Apache 2.0 license as the rest of the repository.
