@@ -692,6 +692,25 @@ async function initGame() {
     await createCard();
 }
 
+// Share results using Web Share API or copy to clipboard
+function shareResults() {
+    const message = `I scored ${currentScore} in Elon Musk Simulator!`;
+    const url = window.location.href;
+    if (navigator.share) {
+        navigator.share({ title: 'Elon Musk Simulator', text: message, url })
+            .catch(err => console.error('Share failed:', err));
+    } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(`${message} ${url}`)
+            .then(() => alert('Copied to clipboard'))
+            .catch(err => {
+                console.error('Copy failed:', err);
+                prompt('Copy this text:', `${message} ${url}`);
+            });
+    } else {
+        prompt('Copy this text:', `${message} ${url}`);
+    }
+}
+
 // Set up restart button
 document.getElementById('restart-button').addEventListener('click', function() {
     initGame();
@@ -703,6 +722,9 @@ document.getElementById('quit-button').addEventListener('click', function() {
     // For now, just restart
     initGame();
 });
+
+// Set up share button
+document.getElementById('share-button').addEventListener('click', shareResults);
 
 // Initialize the game when the page loads
 
