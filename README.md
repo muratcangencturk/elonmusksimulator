@@ -20,13 +20,19 @@ The game loads these files on demand so only the necessary categories are fetche
 Screenshots below show a glimpse of the interface:
 
 ```bash
-node normalize_questions.js
+npm run normalize
 ```
 
 The script scans `questions.json` and all `new_questions_batch*.json` files in
 the repository, swaps responses when the left choice carries a positive impact
 and the right choice a negative one, then writes the normalized JSON back to
 disk.
+
+## Developer Scripts
+
+Run `npm run normalize` anytime you add new questions to ensure left/right
+responses follow the expected structure. Use `npm run categorize` to generate
+`tech.json`, `politics.json` and `misc.json` from the question files.
 
 ## Live Demo
 
