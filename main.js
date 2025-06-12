@@ -690,6 +690,11 @@ document.getElementById('quit-button').addEventListener('click', function() {
 window.addEventListener('load', function() {
     initI18n();
     initGame();
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+            .then(reg => console.log('Service Worker registered', reg))
+            .catch(err => console.error('Service Worker registration failed:', err));
+    }
 });
 
 // Language toggle buttons
