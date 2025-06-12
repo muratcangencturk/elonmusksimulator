@@ -1,13 +1,13 @@
 [
   {
-    "text": "Erdoğan seni Karadeniz kıyısında, teknoloji odaklı futuristik bir şehir tasarlamaya davet ediyor. Şehre isim verme hakkı sunuyor.",
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
     "emojis": [
       "🏙️",
       "🌊",
       "🔮"
     ],
-    "rightResponse": "\"Sıfırdan kurulacak futuristik bir teknoloji şehri mi? En gelişmiş teknolojilerimizi denemek için mükemmel bir alan!\"",
-    "leftResponse": "\"Kentsel gelişim yerel uzmanlık ve kültürel anlayış gerektirir, Türkiye için bunlara sahip değilim.\"",
     "impact": {
       "right": {
         "legacy": 15,
@@ -26,14 +26,14 @@
     }
   },
   {
-    "text": "Tim Cook, şirketlerinin kullanıcı arayüzlerini Apple'ın 'zarif sadeliği'ne kıyasla 'dağınık ve sezgisel değil' diye eleştiriyor.",
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
     "emojis": [
       "📱",
       "🎨",
       "👎"
     ],
-    "leftResponse": "\"Farklı tasarım felsefeleri farklı ihtiyaçlara hizmet eder! Belki birbirimizin yaklaşımlarından öğrenebiliriz?\"",
-    "rightResponse": "\"Arayüzlerimiz işlevsellik ve kullanıcı özgürlüğünü, yetenekleri kısıtlayan aşırı sade tasarımın önünde tutar.\"",
     "impact": {
       "left": {
         "tesla": -10,
@@ -52,14 +52,14 @@
     }
   },
   {
-    "text": "Steve Jobs'un hayaleti, ürün takvimlerini halka açıklamayı bırakmanı tavsiye ediyor. 'Önce gizem yarat, sonra mükemmellikle şaşırt.'",
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
     "emojis": [
       "👻",
       "🗓️",
       "✨"
     ],
-    "rightResponse": "\"Apple'ın gizlilik yaklaşımı gerçekten beklenti oluşturuyor! Duyurularımızda daha stratejik olacağım. Yakında: Şu Bu Projesi, yarın ile evrenin ısıl ölümü arasında bir zamanda!\"",
-    "leftResponse": "\"Hedeflerimiz konusunda şeffaf olmak bizi sorumlu kılar. Gecikmelere rağmen halk ne üzerinde çalıştığımızı bilmeyi hak ediyor.\"",
     "impact": {
       "right": {
         "public_opinion": -15,
@@ -74,6 +74,214 @@
         "tesla": -5,
         "spacex": -5,
         "legacy": 10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "👽",
+      "🌍",
+      "🔍"
+    ],
+    "impact": {
+      "left": {
+        "public_opinion": -25,
+        "government": -20,
+        "legacy": -15,
+        "x_twitter": 25,
+        "finance": -20
+      },
+      "right": {
+        "public_opinion": 15,
+        "government": 10,
+        "legacy": 10,
+        "x_twitter": -15,
+        "finance": 15
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "👽",
+      "🗣️",
+      "🧠"
+    ],
+    "impact": {
+      "left": {
+        "public_opinion": -25,
+        "x_twitter": -15,
+        "ai_bots": 20,
+        "legacy": -20,
+        "government": -15
+      },
+      "right": {
+        "public_opinion": 20,
+        "x_twitter": 10,
+        "ai_bots": -15,
+        "legacy": 15,
+        "government": 10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "👽",
+      "🧬",
+      "👑"
+    ],
+    "impact": {
+      "left": {
+        "neuralink": 15,
+        "public_opinion": -25,
+        "government": -25,
+        "legacy": -20,
+        "finance": 10
+      },
+      "right": {
+        "neuralink": -10,
+        "public_opinion": 20,
+        "government": 15,
+        "legacy": 15,
+        "finance": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🥊",
+      "🎙️",
+      "📺"
+    ],
+    "impact": {
+      "right": {
+        "public_opinion": 15,
+        "x_twitter": 25,
+        "legacy": -10,
+        "tesla": -10,
+        "spacex": -10
+      },
+      "left": {
+        "public_opinion": -10,
+        "x_twitter": -20,
+        "legacy": 5,
+        "tesla": 10,
+        "spacex": 10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🎙️",
+      "🚗",
+      "🏔️"
+    ],
+    "impact": {
+      "right": {
+        "tesla": 20,
+        "public_opinion": -15,
+        "x_twitter": -10,
+        "finance": 10,
+        "government": 10
+      },
+      "left": {
+        "tesla": -15,
+        "public_opinion": 20,
+        "x_twitter": 15,
+        "finance": -10,
+        "government": -15
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🚗",
+      "🎮",
+      "😂"
+    ],
+    "impact": {
+      "right": {
+        "public_opinion": 25,
+        "x_twitter": 20,
+        "tesla": -10,
+        "legacy": -5,
+        "finance": -5
+      },
+      "left": {
+        "public_opinion": -20,
+        "x_twitter": -15,
+        "tesla": 15,
+        "legacy": 5,
+        "finance": 10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "𝕏",
+      "💰",
+      "😂"
+    ],
+    "impact": {
+      "right": {
+        "public_opinion": 25,
+        "x_twitter": 20,
+        "finance": -15,
+        "legacy": -10,
+        "government": -5
+      },
+      "left": {
+        "public_opinion": -20,
+        "x_twitter": -15,
+        "finance": 10,
+        "legacy": 5,
+        "government": 5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🏫",
+      "💰",
+      "🧮"
+    ],
+    "impact": {
+      "left": {
+        "legacy": -15,
+        "public_opinion": -10,
+        "finance": 15,
+        "x_twitter": -5,
+        "government": -5
+      },
+      "right": {
+        "legacy": 20,
+        "public_opinion": 15,
+        "finance": -15,
+        "x_twitter": 10,
+        "government": 5
       }
     }
   }

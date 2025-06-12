@@ -1,0 +1,782 @@
+[
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🏭",
+      "🇹🇷",
+      "🚗"
+    ],
+    "impact": {
+      "right": {
+        "tesla": 15,
+        "finance": -10,
+        "government": 10,
+        "public_opinion": 5,
+        "legacy": 5
+      },
+      "left": {
+        "tesla": -5,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": -5,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🚀",
+      "🇹🇷",
+      "👨‍🚀"
+    ],
+    "impact": {
+      "right": {
+        "spacex": 10,
+        "finance": -5,
+        "government": 15,
+        "public_opinion": 10,
+        "legacy": 5
+      },
+      "left": {
+        "spacex": -5,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": -10,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🧠",
+      "🏥",
+      "🇹🇷"
+    ],
+    "impact": {
+      "right": {
+        "neuralink": 15,
+        "finance": 10,
+        "government": 10,
+        "public_opinion": -15,
+        "legacy": -10
+      },
+      "left": {
+        "neuralink": -5,
+        "finance": -10,
+        "government": -10,
+        "public_opinion": 15,
+        "legacy": 10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🪙",
+      "🇹🇷",
+      "💰"
+    ],
+    "impact": {
+      "right": {
+        "crypto": 15,
+        "finance": -15,
+        "government": 10,
+        "public_opinion": -5,
+        "x_twitter": 10
+      },
+      "left": {
+        "crypto": -10,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": 5,
+        "x_twitter": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🤖",
+      "🚗",
+      "🏙️"
+    ],
+    "impact": {
+      "right": {
+        "ai_bots": 15,
+        "tesla": 10,
+        "finance": -10,
+        "government": 10,
+        "legacy": 5
+      },
+      "left": {
+        "ai_bots": -5,
+        "tesla": -5,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "☀️",
+      "🔋",
+      "🇹🇷"
+    ],
+    "impact": {
+      "right": {
+        "tesla": 15,
+        "finance": -10,
+        "government": 15,
+        "public_opinion": 10,
+        "legacy": 5
+      },
+      "left": {
+        "tesla": -10,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": -5,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🏙️",
+      "🌊",
+      "🔮"
+    ],
+    "impact": {
+      "right": {
+        "legacy": 15,
+        "finance": -15,
+        "government": 15,
+        "public_opinion": 5,
+        "tesla": 5
+      },
+      "left": {
+        "legacy": -10,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": -5,
+        "tesla": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🛰️",
+      "🏫",
+      "🇹🇷"
+    ],
+    "impact": {
+      "right": {
+        "spacex": 10,
+        "finance": 5,
+        "government": 15,
+        "public_opinion": 15,
+        "legacy": 10
+      },
+      "left": {
+        "spacex": -10,
+        "finance": -5,
+        "government": -15,
+        "public_opinion": -15,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🚀",
+      "🪐",
+      "🇹🇷"
+    ],
+    "impact": {
+      "right": {
+        "mars": 15,
+        "spacex": 5,
+        "government": 15,
+        "finance": -15,
+        "legacy": 10
+      },
+      "left": {
+        "mars": -5,
+        "spacex": -5,
+        "government": -15,
+        "finance": 5,
+        "legacy": -10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🚇",
+      "🏙️",
+      "🇹🇷"
+    ],
+    "impact": {
+      "right": {
+        "legacy": 15,
+        "finance": -15,
+        "government": 15,
+        "public_opinion": 10,
+        "tesla": 5
+      },
+      "left": {
+        "legacy": -10,
+        "finance": 5,
+        "government": -15,
+        "public_opinion": -10,
+        "tesla": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🏭",
+      "🇸🇦",
+      "💰"
+    ],
+    "impact": {
+      "right": {
+        "tesla": 15,
+        "finance": 15,
+        "government": 10,
+        "public_opinion": -15,
+        "legacy": 5
+      },
+      "left": {
+        "tesla": -10,
+        "finance": -15,
+        "government": -10,
+        "public_opinion": 15,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🚄",
+      "🏙️",
+      "🇸🇦"
+    ],
+    "impact": {
+      "right": {
+        "legacy": 20,
+        "finance": 15,
+        "government": 15,
+        "public_opinion": -10,
+        "tesla": 10
+      },
+      "left": {
+        "legacy": -15,
+        "finance": -15,
+        "government": -15,
+        "public_opinion": 5,
+        "tesla": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "☀️",
+      "🏜️",
+      "🔋"
+    ],
+    "impact": {
+      "right": {
+        "tesla": 15,
+        "finance": 15,
+        "government": 15,
+        "public_opinion": -10,
+        "legacy": 15
+      },
+      "left": {
+        "tesla": -10,
+        "finance": -15,
+        "government": -15,
+        "public_opinion": 10,
+        "legacy": -10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🚀",
+      "🌊",
+      "🇸🇦"
+    ],
+    "impact": {
+      "right": {
+        "spacex": 15,
+        "finance": 15,
+        "government": 15,
+        "public_opinion": -20,
+        "mars": 10
+      },
+      "left": {
+        "spacex": -10,
+        "finance": -15,
+        "government": -15,
+        "public_opinion": 15,
+        "mars": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🪙",
+      "🛢️",
+      "💰"
+    ],
+    "impact": {
+      "right": {
+        "crypto": 15,
+        "finance": 15,
+        "government": 15,
+        "public_opinion": -20,
+        "x_twitter": 10
+      },
+      "left": {
+        "crypto": -10,
+        "finance": -15,
+        "government": -15,
+        "public_opinion": 15,
+        "x_twitter": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🏙️",
+      "🤖",
+      "🚕"
+    ],
+    "impact": {
+      "right": {
+        "tesla": 20,
+        "ai_bots": 15,
+        "government": 15,
+        "public_opinion": -15,
+        "legacy": 15
+      },
+      "left": {
+        "tesla": -15,
+        "ai_bots": -10,
+        "government": -15,
+        "public_opinion": 10,
+        "legacy": -10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🧠",
+      "🏥",
+      "🇸🇦"
+    ],
+    "impact": {
+      "right": {
+        "neuralink": 15,
+        "finance": 15,
+        "government": 15,
+        "public_opinion": -15,
+        "legacy": 10
+      },
+      "left": {
+        "neuralink": -10,
+        "finance": -15,
+        "government": -15,
+        "public_opinion": 10,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🪐",
+      "🏜️",
+      "🏙️"
+    ],
+    "impact": {
+      "right": {
+        "mars": 20,
+        "spacex": 10,
+        "government": 15,
+        "finance": 15,
+        "legacy": 10
+      },
+      "left": {
+        "mars": -15,
+        "spacex": -5,
+        "government": -15,
+        "finance": -15,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🚗",
+      "⚡",
+      "💼"
+    ],
+    "impact": {
+      "right": {
+        "tesla": 20,
+        "finance": 15,
+        "government": 15,
+        "public_opinion": -15,
+        "legacy": 5
+      },
+      "left": {
+        "tesla": -15,
+        "finance": -15,
+        "government": -15,
+        "public_opinion": 10,
+        "legacy": 5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "𝕏",
+      "🇸🇦",
+      "💰"
+    ],
+    "impact": {
+      "right": {
+        "x_twitter": 20,
+        "finance": 15,
+        "government": 15,
+        "public_opinion": -25,
+        "legacy": -10
+      },
+      "left": {
+        "x_twitter": -15,
+        "finance": -15,
+        "government": -15,
+        "public_opinion": 20,
+        "legacy": 10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🎙️",
+      "🧠",
+      "🌌"
+    ],
+    "impact": {
+      "right": {
+        "public_opinion": 15,
+        "x_twitter": -10,
+        "ai_bots": -5,
+        "legacy": 10,
+        "government": 10
+      },
+      "left": {
+        "public_opinion": -20,
+        "x_twitter": 25,
+        "ai_bots": 10,
+        "legacy": -15,
+        "government": -15
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🧠",
+      "🎙️",
+      "📈"
+    ],
+    "impact": {
+      "right": {
+        "neuralink": -10,
+        "public_opinion": 15,
+        "x_twitter": -15,
+        "government": 10,
+        "legacy": 10
+      },
+      "left": {
+        "neuralink": 15,
+        "public_opinion": -20,
+        "x_twitter": 25,
+        "government": -15,
+        "legacy": -10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🚗",
+      "🎙️",
+      "💨"
+    ],
+    "impact": {
+      "right": {
+        "tesla": 10,
+        "public_opinion": -20,
+        "x_twitter": 25,
+        "government": -20,
+        "finance": 10
+      },
+      "left": {
+        "tesla": -5,
+        "public_opinion": 15,
+        "x_twitter": -10,
+        "government": 15,
+        "finance": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🥊",
+      "🪐",
+      "📱"
+    ],
+    "impact": {
+      "right": {
+        "mars": 10,
+        "public_opinion": 5,
+        "x_twitter": -15,
+        "legacy": 10,
+        "spacex": 5
+      },
+      "left": {
+        "mars": -15,
+        "public_opinion": -10,
+        "x_twitter": 30,
+        "legacy": -15,
+        "spacex": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🧠",
+      "🐙",
+      "🦅"
+    ],
+    "impact": {
+      "right": {
+        "neuralink": -15,
+        "public_opinion": -10,
+        "x_twitter": 25,
+        "ai_bots": 15,
+        "legacy": -10
+      },
+      "left": {
+        "neuralink": 10,
+        "public_opinion": 5,
+        "x_twitter": -15,
+        "ai_bots": -10,
+        "legacy": 5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🚀",
+      "🎙️",
+      "🪐"
+    ],
+    "impact": {
+      "right": {
+        "mars": -10,
+        "spacex": -15,
+        "public_opinion": 5,
+        "x_twitter": 25,
+        "legacy": 10
+      },
+      "left": {
+        "mars": 15,
+        "spacex": 10,
+        "public_opinion": -10,
+        "x_twitter": -15,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🤖",
+      "🎙️",
+      "🗣️"
+    ],
+    "impact": {
+      "right": {
+        "ai_bots": -10,
+        "public_opinion": 15,
+        "x_twitter": -15,
+        "government": 10,
+        "legacy": 10
+      },
+      "left": {
+        "ai_bots": 15,
+        "public_opinion": -20,
+        "x_twitter": 25,
+        "government": -15,
+        "legacy": -10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🪙",
+      "🎙️",
+      "📈"
+    ],
+    "impact": {
+      "right": {
+        "crypto": 10,
+        "finance": 5,
+        "x_twitter": -15,
+        "public_opinion": 10,
+        "legacy": 5
+      },
+      "left": {
+        "crypto": -15,
+        "finance": -10,
+        "x_twitter": 25,
+        "public_opinion": -15,
+        "legacy": -5
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🏹",
+      "🪐",
+      "🦌"
+    ],
+    "impact": {
+      "right": {
+        "mars": 15,
+        "public_opinion": 10,
+        "x_twitter": -15,
+        "government": 10,
+        "legacy": 5
+      },
+      "left": {
+        "mars": -20,
+        "public_opinion": -15,
+        "x_twitter": 25,
+        "government": -15,
+        "legacy": -10
+      }
+    }
+  },
+  {
+    "text": "",
+    "rightResponse": "",
+    "leftResponse": "",
+    "emojis": [
+      "🧠",
+      "🐵",
+      "💭"
+    ],
+    "impact": {
+      "right": {
+        "neuralink": 15,
+        "public_opinion": 15,
+        "x_twitter": -15,
+        "government": 10,
+        "legacy": 5
+      },
+      "left": {
+        "neuralink": -15,
+        "public_opinion": -20,
+        "x_twitter": 25,
+        "government": -15,
+        "legacy": -10
+      }
+    }
+  }
+]
