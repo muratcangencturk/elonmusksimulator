@@ -641,7 +641,10 @@ async function loadCategory(name) {
     } catch (err) {
         console.warn(`Fetch failed for ${cat.file[getLanguage()]}, attempting module import`, err);
         try {
-            const module = await import(/* webpackIgnore: true */ `./${cat.file[getLanguage()]}`);
+            const module = await import(
+                /* webpackIgnore: true */ `./${cat.file[getLanguage()]}`,
+                { assert: { type: 'json' } }
+            );
             const valid = filterValidQuestions(module.default);
             cat.questions = addInnovationImpactToQuestions(valid);
             cat.loaded = true;
