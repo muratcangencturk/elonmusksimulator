@@ -24,12 +24,16 @@ const ASSETS = [
 ];
 
 self.addEventListener('install', event => {
+  console.log('Service worker installed, skipping waiting');
+  self.skipWaiting();
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS))
   );
 });
 
 self.addEventListener('activate', event => {
+  console.log('Service worker activated, claiming clients');
+  self.clients.claim();
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))
