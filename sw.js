@@ -1,4 +1,5 @@
-const CACHE_NAME = 'elon-sim-cache-v2';
+// Increment the cache name whenever this file changes so old caches are cleared
+const CACHE_NAME = 'elon-sim-cache-v3';
 const ASSETS = [
   './',
   'index.html',
@@ -37,7 +38,31 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request).then(resp => resp || fetch(event.request))
-  );
+  const { request } = event;
+  if (request.mode === 'navigate' || request.url.endsWith('.js')) {
+    // Prefer the network for navigation and script requests
+    event.respondWith(
+      fetch(request)
+        .then(response => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+          return response;
+        })
+        .catch(() => caches.match(request))
+    );
+  } else {
+    // For other assets, use cache first and update from the network if missing
+    event.respondWith(
+      caches.match(request).then(cached => {
+        return (
+          cached ||
+          fetch(request).then(response => {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+            return response;
+          })
+        );
+      })
+    );
+  }
 });
