@@ -746,7 +746,7 @@ window.addEventListener('load', function() {
     initI18n();
     initGame();
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js')
+        navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' })
             .then(reg => console.log('Service Worker registered', reg))
             .catch(err => console.error('Service Worker registration failed:', err));
     }
